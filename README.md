@@ -108,7 +108,24 @@ CODE-PAPER/
 │           └── classified-cells-wrong.png
 │           └── dashboard.png
 │
-├── results/                      # Output folder (MLflow runs, artifacts, etc.)
+├── results/ # Experimental results and user assessments
+│ ├── gemma/
+│   ├── all_task_generated_brainmed.xlsx 
+│   ├── all_task_generated_rhyno.xlsx
+│   └── analysis_task.xlsx
+│ 
+│ ├── llama/
+│   ├── all_tasks_brainmed.xlsx
+│   ├── all_tasks_rhyno.csv
+│   └── analysis.xlsx
+│ 
+│ ├── qwen/
+│ |  ├── qwen_tasks_comparison_brainmed.xlsx
+│ |  └── qwen_tasks_comparison_rhyno.xlsx
+│ |  
+│ └── user_assessmnet/ # User study evaluation forms
+│     ├── Integrating LLMs in the Evaluation Phase of Human... (response from users)
+│     └── Questionnaire PDF.pdf (questions for users)
 │
 ├── src/                          # Source code
 │   ├── step_1_html/
@@ -126,6 +143,9 @@ CODE-PAPER/
 │   │   ├── brainmed/
 │   │   └── rhyno_cyt/
 │   └── __init__.py
+|
+├── utils/                         # Utility functions
+│   └── get_run.ipynb              # notebook for retrieving runs from MLflow 
 │
 ├── main.py                       # Unified entrypoint for all experiments
 ├── requirements.txt              # Dependencies
