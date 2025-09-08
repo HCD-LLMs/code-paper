@@ -1,0 +1,53 @@
+from langchain_core.prompts import PromptTemplate
+
+expertise = "usability testing"
+cat_users = "Doctor specialized in neurology for the diagnosis and detection of Alzheimer's"
+system_name = "BrainMed"
+system_desc = "It is a web application for support neurologists in early detection and diagnosis of Alzheimer's that uses multimodal AI, which integrates: tabular genetic data, tabular EHR data and 3D MRI brain scans. These data are provided in input to the system to generate the diagnosis along with its explanation."
+REQUEST = (
+    f"""You are an expert in system {expertise}. Your task is to generate tasks for a user test performed by participants belonging to the category specified by the label {cat_users} in the system description message. Each task must meet the following characteristics:
+    - Provide clear instructions on what participants should do
+    - Avoid including words that appear in the product interface
+    - Do not specify detailed steps to complete the task (e.g., avoid naming specific links or referencing link text)
+    - Be atomic, meaning each task must have a single, clear goal
+
+    To generate the tasks, follow these steps:
+    1. Analyze the system description to be tested as indicated by the {system_desc} label in the system description message
+    2. Identify the system's core functionalities, excluding typical features for its category (e.g., login or registration for web apps)
+    3. Generate tasks that test the main functionalities of the system
+    4. Verify that the generated tasks meet the specified requirements
+    
+    You must explore the html code of the application before generating the task. """
+)
+
+
+CONTEXT = (f"""The system that is being tested is {system_name}. {system_desc}. The system's main functions include:
+	- Alzheimer's detection and diagnosis: The systems detects and diagnose Alzheimer's throught the data inserted by the DOCTOR (i.e. MRI brain scan, tabular genetic data, and tabular EHR data)
+	   along with the corresponding explanation provided through GradCAM and natural language.
+	- Display of the results and corresponding explanation: The system presents the diagnosis and the explanation through a 3D GradCAM image and natural texts in terms comprehensible to humans.
+	- Details on demand by interacting with an AI-based chatbot: The system allows the neurologist to ask further details and clarification about the diagnosis and explanation to an AI-based chatbot.
+    - Access to patient's history: The system allows the neurologist to visualize the patient's previous diagnosis.
+""")
+
+STRUCTURE = ("""
+    The output must be divided in two sections: the first must be labeled as "Reasoning", which must contain the reasoning process that took you to generate the tasks, the second must be labeled "Tasks" and must contain the tasks in the following form:
+             - <task1>
+             - <task2>
+             - ... 
+""")
+
+
+TEMPLATE = "\n\n".join([
+    "[Request]\n" + REQUEST + "\n",
+    "[Context]\n" + CONTEXT + "\n",
+    "[HTML Code]\n{html_snippet}",
+    "[Structure]\n" + STRUCTURE + "\n",
+])
+
+
+prompt_template = PromptTemplate.from_template(TEMPLATE)
+
+prompt_text = "\n\n".join([
+    "[Request]\n" + REQUEST + "\n",
+    "[Context]\n" + CONTEXT + "\n",
+    "[Structure]\n" + STRUCTURE + "\n"])

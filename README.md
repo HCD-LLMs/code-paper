@@ -1,55 +1,56 @@
-```markdown
-# Prompt Engineering con Ollama + LangChain + MLflow
+# Prompt Engineering with Ollama + LangChain + MLflow
 
-Questa guida mostra come configurare un ambiente locale per tracciare esperimenti con Ollama usando LangChain e MLflow, sia su Windows sia su macOS.
-
----
-
-## Contenuti
-
-1. [Preparazione dell’ambiente (venv)](#preparazione-dellambiente-venv)  
-2. [Installazione delle dipendenze](#installazione-delle-dipendenze)  
-3. [Avvio del server MLflow](#avvio-del-server-mlflow)  
-4. [Avvio di Ollama (run model)](#avvio-di-ollama-run-model)  
-5. [Esecuzione dello script Python](#esecuzione-dello-script-python)
+This guide explains how to configure a local environment to track experiments using **Ollama**, **LangChain**, and **MLflow**.  
+It also describes the folder structure and how to run the provided Python scripts.
 
 ---
 
-## Preparazione dell’ambiente (venv)
+## Table of Contents
+
+1. [Environment setup (venv)](#environment-setup-venv)  
+2. [Installing dependencies](#installing-dependencies)  
+3. [Starting the MLflow server](#starting-the-mlflow-server)  
+4. [Running Ollama (models)](#running-ollama-models)  
+5. [Folder structure](#folder-structure)  
+6. [Running experiments](#running-experiments)  
+7. [Notes](#notes)  
+
+---
+
+## Environment setup (venv)
 
 ### Windows
 
 ```powershell
-cd C:\prompt_ollama
+cd C:\code-paper
 python -m venv .venv
 .venv\Scripts\activate
-```
+````
 
-### macOS
+### macOS / Linux
 
 ```bash
-cd ~/prompt_ollama
+cd ~/code-paper
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
 ---
 
-## Installazione delle dipendenze
+## Installing dependencies
 
-Con il virtual environment attivo, installa i pacchetti dal `requirements.txt`:
+With the virtual environment active, install all required packages from `requirements.txt`:
 
 ```bash
-python.exe -m pip install --upgrade pip
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+---
 
+## Starting the MLflow server
 
-
-
-## Avvio del server MLflow
-In un altro terminale, al di fuori del virtual enviroment avviare il server locale di MLflow
+Open another terminal (outside the virtual environment) and start MLflow:
 
 ### Windows
 
@@ -60,7 +61,7 @@ mlflow server `
   --host 127.0.0.1 --port 5000
 ```
 
-### macOS
+### macOS / Linux
 
 ```bash
 mlflow server \
@@ -69,44 +70,167 @@ mlflow server \
   --host 127.0.0.1 --port 5000
 ```
 
-- **Dashboard**: apri il browser su [http://127.0.0.1:5000](http://127.0.0.1:5000)
+* **MLflow Dashboard**: open [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ---
 
-## Avvio di Ollama (run model)
+## Running Ollama (models)
 
-Assicurati di aver installato Ollama:
-
-
+Make sure **Ollama** is installed and running:
 
 ```powershell
-
-ollama run deepseek-r1:8b (o modello associato)
+ollama run deepseek-r1:8b   # or another model (llama3, gemma3, qwen, etc.)
 ```
 
-
-
-- Il modello verrà caricato e il server ascolterà su `http://localhost:11434`
+* The Ollama API will be available at: `http://localhost:11434`
 
 ---
 
-## Esecuzione dello script Python
+## Folder structure
 
-Con entrambi i servizi (MLflow e Ollama) in esecuzione e il venv attivo, lancia sul venv:
+The project is organized as follows:
+
+```
+CODE-PAPER/
+│
+├── data/                         # Input data for prompts
+│   ├── brainmed/
+│   │   ├── html/                 # HTML files for BrainMed prototype
+│   │   │   └── code_brainmed.html (example)
+│   │   └── img/                  # Images for BrainMed prototype
+│   │       └── ...
+│   │
+│   └── rhyno_cyt/
+│       ├── html/                 # HTML files for Rhyno-Cyt prototype
+│       │   └── code_rhyno.html
+│       └── img/                  # Images for Rhyno-Cyt prototype
+│           └── classified-cells-correct.png
+│           └── classified-cells-wrong.png
+│           └── dashboard.png
+│
+├── results/                      # Output folder (MLflow runs, artifacts, etc.)
+│
+├── src/                          # Source code
+│   ├── step_1_html/
+│   │   └── loop_temp_prompt.py   # Runs HTML-based experiments
+│   ├── step_2_img/
+│   │   └── loop_temp_prompt.py   # Runs image-based experiments
+│   ├── step_1_prompt/            # Prompt templates for BrainMed & Rhyno-Cyt (HTML)
+│   │   ├── brainmed/
+│   │   │   ├── template.py
+│   │   │   ├── prompt_one_shot.py
+│   │   │   └── prompt_few_shot.py
+│   │   └── rhyno_cyt/
+│   │       └── ...
+│   ├── step_2_prompt/            # Prompt templates for BrainMed & Rhyno-Cyt (Images)
+│   │   ├── brainmed/
+│   │   └── rhyno_cyt/
+│   └── __init__.py
+│
+├── main.py                       # Unified entrypoint for all experiments
+├── requirements.txt              # Dependencies
+└── README.md                     # This guide
+```
+
+---
+
+## Running experiments
+
+All experiments are launched via **main.py** with parameters:
 
 ```bash
-python mlflow_langchain_html.py
+python main.py --step <step> [--prototype <name>] [--mode <prompt_mode>] [--param key=value]
 ```
 
-- Vedrai in console le risposte del modello  
-- In MLflow compariranno le run con prompt, risposta, parametri e artefatti  
+### 1. Run HTML experiments (step 1)
+
+```bash
+python main.py --step step_1_html --param prototype=brainmed
+python main.py --step step_1_html --param prototype=rhyno_cyt
+```
+
+* Loads HTML files from: `data/<prototype>/html/`
+
+### 2. Run Image experiments (step 2)
+
+```bash
+python main.py --step step_2_img --param prototype=brainmed
+python main.py --step step_2_img --param prototype=rhyno_cyt
+```
+
+* Loads image files from: `data/<prototype>/img/`
+
+### 3. Run Prompt-only experiments (text-based)
+
+```bash
+# Zero-shot, one-shot, few-shot for BrainMed
+python main.py --step step_1_prompt --prototype brainmed --mode zero-shot
+python main.py --step step_1_prompt --prototype brainmed --mode one-shot
+python main.py --step step_1_prompt --prototype brainmed --mode few-shot
+
+# Rhyno-Cyt (same for step_2_prompt)
+python main.py --step step_2_prompt --prototype rhyno_cyt --mode zero-shot
+```
+
+### 4. Extra parameters
+
+You can pass additional parameters with `--param key=value`, for example:
+
+```bash
+python main.py --step step_2_img --param prototype=brainmed --param num_generations=5 --param model_choice=0 --param temperature=0.3
+```
 
 ---
 
-**Note finali**  
-- Mantieni sempre il venv attivo quando lavori sul progetto.  
-- Per aggiungere nuovi template, modifica `templates.py`.  
-- Esegui il backup di `./mlruns` per salvare i log, rinomina la cartella nel seguente formtato `mlruns_nome_personale`.  
-- Per aggiornare dipendenze, ricrea il venv partendo dal `requirements.txt`.  
+## Notes
 
-Buon prompt engineering!
+* Always keep the **virtual environment active** when working on the project.
+* To add new prompt templates, create/edit Python files under `src/step_1_prompt/<prototype>/` or `src/step_2_prompt/<prototype>/`.
+* Back up MLflow logs by saving the `./mlruns` directory (e.g., rename to `mlruns_<name>`).
+* To update dependencies, rebuild the venv from `requirements.txt`.
+
+
+## System Pipeline
+
+```mermaid
+
+flowchart LR
+    subgraph User["👩‍💻 Researcher"]
+        A[main.py<br>CLI parameters]
+    end
+
+    subgraph Data["📂 Data"]
+        H1[HTML files<br>data/<prototype>/html/]
+        H2[Image files<br>data/<prototype>/img/]
+    end
+
+    subgraph Engine["⚙️ Experiment Engine"]
+        B[LangChain PromptTemplate]
+        C[Ollama Model]
+        D[LangChain Chain]
+    end
+
+    subgraph Tracking["📊 MLflow"]
+        E[Parameters & Tags]
+        F[Prompt Variants]
+        G[Outputs & Metrics]
+    end
+
+    subgraph Results["🗂 Results"]
+        R[./results & mlruns]
+    end
+
+    %% Connections
+    A --> B
+    Data --> B
+    B --> D
+    D --> C
+    C --> D
+    D --> G
+    D --> R
+    B --> F
+    A --> E
+    G --> Tracking
+    E --> Tracking
+    F --> Tracking
+    Tracking --> R
