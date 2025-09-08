@@ -180,57 +180,5 @@ You can pass additional parameters with `--param key=value`, for example:
 python main.py --step step_2_img --param prototype=brainmed --param num_generations=5 --param model_choice=0 --param temperature=0.3
 ```
 
----
-
-## Notes
-
-* Always keep the **virtual environment active** when working on the project.
-* To add new prompt templates, create/edit Python files under `src/step_1_prompt/<prototype>/` or `src/step_2_prompt/<prototype>/`.
-* Back up MLflow logs by saving the `./mlruns` directory (e.g., rename to `mlruns_<name>`).
-* To update dependencies, rebuild the venv from `requirements.txt`.
 
 
-## System Pipeline
-
-```mermaid
-
-flowchart LR
-    subgraph User["👩‍💻 Researcher"]
-        A[main.py<br>CLI parameters]
-    end
-
-    subgraph Data["📂 Data"]
-        H1[HTML files<br>data/<prototype>/html/]
-        H2[Image files<br>data/<prototype>/img/]
-    end
-
-    subgraph Engine["⚙️ Experiment Engine"]
-        B[LangChain PromptTemplate]
-        C[Ollama Model]
-        D[LangChain Chain]
-    end
-
-    subgraph Tracking["📊 MLflow"]
-        E[Parameters & Tags]
-        F[Prompt Variants]
-        G[Outputs & Metrics]
-    end
-
-    subgraph Results["🗂 Results"]
-        R[./results & mlruns]
-    end
-
-    %% Connections
-    A --> B
-    Data --> B
-    B --> D
-    D --> C
-    C --> D
-    D --> G
-    D --> R
-    B --> F
-    A --> E
-    G --> Tracking
-    E --> Tracking
-    F --> Tracking
-    Tracking --> R
