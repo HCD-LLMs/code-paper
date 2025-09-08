@@ -14,8 +14,8 @@ from langchain_openai import ChatOpenAI
 
 def _import_prompt_modules(prototype: str, prompt_step: str = "step_2_prompt"):
     """
-    Carica dinamicamente i tre moduli dei prompt per il prototipo scelto.
-    Atteso: src/<prompt_step>/<prototype>/{template,prompt_one_shot,prompt_few_shot}.py
+    Load dynamically the three prompt modules for the chosen prototype.
+    Attempt to: src/<prompt_step>/<prototype>/{template,prompt_one_shot,prompt_few_shot}.py
     """
     base = f"src.{prompt_step}.{prototype}"
     zero_shot = importlib.import_module(f"{base}.template")
@@ -27,23 +27,11 @@ def _import_prompt_modules(prototype: str, prompt_step: str = "step_2_prompt"):
         "few_shot":  {"template": few_shot.prompt_template,  "text": few_shot.prompt_text},
     }
 
-# --- ADD: risoluzione percorsi IMG in base a prototype
+# Resolve image paths
 def _resolve_image_paths(prototype: str, data_root: str = "data") -> list[str]:
     base = Path(data_root) / prototype / "img"
     valid = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".webp"}
     return [str(p) for p in sorted(base.iterdir()) if p.suffix.lower() in valid]
-
-
-
-def _load_image_paths(folder: str = "img") -> List[str]:
-    valid_exts = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".webp"}
-    if not os.path.isdir(folder):
-        return []
-    return [
-        os.path.join(folder, f)
-        for f in os.listdir(folder)
-        if os.path.splitext(f.lower())[1] in valid_exts
-    ]
 
 
 def run(
@@ -61,38 +49,33 @@ def run(
     extra_tags: Dict[str, Any] | None = None,
 ):
     """
-    Entry point invocato dal main. Esempio:
+    Entry point invoked from main. Example:
     python main.py --step step_2_img --param prototype=rhyno_cyt --param num_generations=5
     """
-    # ---- setup MLflow
+    # MLflow
     mlflow.set_tracking_uri(tracking_uri)
     exp_name = experiment_name or f"Prompt_Comparison-{prototype}-img"
     mlflow.set_experiment(exp_name)
     mlflow.openai.autolog()
 
-    # ---- client "raw" (se ti serve per altre API)
-    _ = RawOpenAI(base_url=openai_api_base, api_key=openai_api_key)
-
-    # ---- carica prompt dinamicamente
+    # Load prompt dynamically
     prompts = _import_prompt_modules(prototype=prototype, prompt_step=prompt_step)
-
-    # ---- immagini in input
-    # --- REPLACE: caricamento immagini
+    # Load all images
     image_paths = _resolve_image_paths(prototype)
     if not image_paths:
         print(f"[WARN] nessuna immagine trovata in: data/{prototype}/img")
 
 
-    # ---- loop
+    
     models = list(models)
     chosen_model = models[model_choice]
 
     for prompt_name, prompt_data in prompts.items():
-        # opzionale: ricrea un PromptTemplate che accetti esplicitamente {image}
+        
         tmpl = prompt_data["template"]
         if "image" not in getattr(tmpl, "input_variables", []):
             tmpl = PromptTemplate.from_template(prompt_data["text"])
-            # Assicurati che il testo includa {image} se vuoi usare l’immagine
+            # ensure the text contains {image}
 
         for t in temperatures:
             chat_llm = ChatOpenAI(
@@ -105,7 +88,7 @@ def run(
 
             run_name = f"{chosen_model}_{prompt_name}_temp_{float(t):.1f}"
             with mlflow.start_run(run_name=run_name):
-                # tag/parametri
+                # tag/parameters
                 mlflow.set_tag("framework", "LangChain")
                 mlflow.set_tag("prompt_type", prompt_name)
                 mlflow.set_tag("prototype", prototype)
@@ -117,9 +100,9 @@ def run(
                 mlflow.log_param("temperature", float(t))
                 mlflow.log_param("num_generations", int(num_generations))
 
-                # registra tutte le immagini usate
-                if os.path.isdir(img_folder):
-                    mlflow.log_artifacts(img_folder, artifact_path=f"input_images_{prompt_name}")
+                
+                
+                mlflow.log_artifacts(img_folder, artifact_path=f"input_images_{prompt_name}")
 
                 # generazioni
                 for gen in range(1, int(num_generations) + 1):
@@ -127,7 +110,7 @@ def run(
                     answer = chain.invoke({"image": image_paths})
                     latency = time.time() - start
 
-                    # LangChain AIMessage -> usa .content
+                    
                     output_text = getattr(answer, "content", str(answer))
                     mlflow.log_text(output_text, f"output_{prompt_name}_gen_{gen}.txt")
                     mlflow.log_metric(f"latency_gen_{gen}", latency)
