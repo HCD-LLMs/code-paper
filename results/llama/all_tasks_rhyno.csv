@@ -1,0 +1,1214 @@
+﻿prompt_type;temperature;generation;task
+few_shot;1;2;Check the classifications of cells in the current batch and validate their correctness, correcting any misclassifications.
+few_shot;1;2;Examine the reference range for a specific cell type and determine if it's within the expected limits.
+few_shot;1;2;Review the classified images of a particular cell type, assessing the confidence level and verifying if the displayed image corresponds to the selected cell type.
+few_shot;1;2;"Mark a batch of cells as ""Correct"" or ""Incorrect"" with explanations for the errors, using the ""Correct"" option to adjust the model's accuracy."
+few_shot;1;2;Browse the dashboard to understand the overall performance of the system in identifying cell types, looking for patterns or areas for model improvement.
+few_shot;1;5;"Check the classification of cells in the ""classified-cells-correct.png"" image and verify that the system provides accurate explanations for each cell type."
+few_shot;1;5;"Identify and correct any incorrect classifications in the ""classified-cells-wrong.png"" image, providing valid reasons for the correction."
+few_shot;1;5;"Review the table showing the type of cell, number of detected cells, reference range, and classification of their quantity in the ""dashboard.png"" image, ensuring that the information is accurate and helpful for a doctor specialized in rhinocytology."
+few_shot;1;5;"In the ""classified-cells-wrong.png"" image, select a cell that has been misclassified and reclassify it, providing a justification for the correction."
+few_shot;1;5;"Verify that the system allows you to mark the classification of cells as “Correct” or “Incorrect” and correct any incorrect classifications in the ""classified-cells-wrong.png"" image."
+few_shot;1;5;Check that the system provides a confidence level for each classified cell and that this information is helpful in evaluating the accuracy of the classification.
+few_shot;1;9;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;1;9;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;1;9;Review the table of test results and answer the following question: What types of cells are included in the reference range?
+few_shot;1;9;Investigate a cell marked as incorrect and try to understand why the automatic classification was wrong. Provide a possible explanation for the mistake.
+few_shot;1;9;Compare the classification of 5 cells selected at random and verify that the system provides accurate results.
+few_shot;1;9;Access the classified cell images and select a cell with low confidence level to understand why the model was not confident in its classification.
+few_shot;0,9;1;In the table displaying test results, check the classification of a ciliated cell and mark it as “Incorrect” if necessary. Provide a reason for correcting the classification.
+few_shot;0,9;1;Evaluate the accuracy of the system in identifying metaplastic cells. Correct any misclassifications, if found, and explain the reason for the correction.
+few_shot;0,9;1;Review the confidence level of classified cell images and provide feedback on the accuracy of images with low confidence levels.
+few_shot;0,9;1;Validate the system's classification of a muciparous cell. If incorrect, correct the classification and explain the reason for the correction.
+few_shot;0,9;1;Analyze the reference range provided for a specific cell type and verify that it is accurate.
+few_shot;0,9;1;Examine the classified cell images and confirm that the images are properly categorized by confidence level.
+few_shot;0,9;2;Check the classification of class ‘‘muciparous’’ cells in the currently displayed results table and correct errors, if any.
+few_shot;0,9;2;Identify cells misclassified in class ‘‘ciliated’’ in the classified cell images and correct misclassifications and explanations, if any.
+few_shot;0,9;2;Browse through the classified cell images categorized by confidence level (low, medium, high) and assess the system's accuracy.
+few_shot;0,9;2;Validate the automatic classification provided by the system for a random selection of cells and correct any incorrect classifications.
+few_shot;0,9;2;Compare the reference range provided for each cell type in the test results table with the actual number of detected cells and check for discrepancies.
+few_shot;0,9;2;Use the validation and correction feature to mark a randomly selected cell classification as “Incorrect” and correct it by selecting a new class and providing a reason for the correction.
+few_shot;0,9;3;Evaluate the accuracy of the classification of a cell as 'muciparous' and suggest corrections if the classification is incorrect.
+few_shot;0,9;3;Review the classification of a cell as 'ciliated' and correct any misclassifications, providing explanations for the changes.
+few_shot;0,9;3;Validate the automatic classification of epithelial cells and correct errors, if any.
+few_shot;0,9;3;Check the classification of a cell as 'mast cells' and correct any incorrect classifications, providing reasons for the changes.
+few_shot;0,9;3;Review the display of test results, including the type of cell, number of detected cells, reference range, and classification of quantity. Ensure that the results are accurate and correct any errors.
+few_shot;0,9;3;Identify a cell that has been misclassified and correct the classification, providing explanations for the change.
+few_shot;0,9;3;Evaluate the confidence level of a cell's classification (low, medium, high) and correct any incorrect classifications.
+few_shot;0,9;3;Review the classified cell images, including those with low, medium, and high confidence levels, and correct any incorrect classifications.
+few_shot;0,9;4;Check the table of test results to ensure that the number of detected cells for class ‘‘muciparous’’ cells is accurate.
+few_shot;0,9;4;Review the classified cell images and verify that they are correctly categorized by confidence level (low, medium, high).
+few_shot;0,9;4;Validate the classification of 5 randomly selected cells and correct any errors, providing explanations for the corrections.
+few_shot;0,9;4;Ensure that the dashboard provides a clear overview of the classification results, including the type of cell, number of detected cells, and reference range.
+few_shot;0,9;4;Identify and correct any misclassifications in the class ‘‘ciliated’’ cells, providing explanations for the corrections.
+few_shot;0,9;6;Identify the types of cells automatically detected in a test and assess the accuracy of the classifications.
+few_shot;0,9;6;Review the confidence levels assigned to the classification of epithelial cells and assess their reliability.
+few_shot;0,9;6;Check the table displaying test results for any discrepancies or errors in cell quantity classification.
+few_shot;0,9;6;Validate the classification of an image with low confidence level, providing reasons for any corrections.
+few_shot;0,9;6;Compare the classification of ciliated cells on the dashboard with the reference range provided and correct errors, if any.
+few_shot;0,9;6;Assess the accuracy of mast cell classification and correct misclassifications, if any.
+few_shot;0,9;7;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,9;7;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,9;7;Validate the classification of a set of cells with a low confidence level and provide reasons for correcting the original classification.
+few_shot;0,9;7;Use the dashboard to view the test results and verify the accuracy of cell counts and classification quantities.
+few_shot;0,9;7;Correct the classification of a single cell marked as ‘‘Incorrect’’ and provide a justification for the new classification.
+few_shot;0,9;7;Compare the original classification and explanations with the corrected ones to ensure understanding of the model's limitations and suggestions for improvement.
+few_shot;0,8;1;Identify cells with incorrect classifications in the dashboard view and correct misclassifications, providing explanations for the corrections.
+few_shot;0,8;1;Check the types of cells automatically identified in the image and verify that the classification of each cell is correct, correcting errors if necessary.
+few_shot;0,8;1;Review the classification table to ensure that the reference range and cell quantity classification are accurate, and correct any discrepancies found.
+few_shot;0,8;1;Verify that the system correctly displays classified cell images, categorized by confidence level, and confirm that the images are properly linked to their corresponding classifications.
+few_shot;0,8;1;"Use the system's validation and correction features to mark classifications as ""Correct"" or ""Incorrect"", and provide reasons for any corrections made."
+few_shot;0,8;10;"As a doctor specialized in rhinocytology, validate the classification of a given cell image as ""muciparous"" and correct any errors, if present, providing explanations for the correction."
+few_shot;0,8;10;"Review the classified cells on the dashboard and identify a cell that has been misclassified as ""ciliated"". Correct the misclassification and provide a justification for the change."
+few_shot;0,8;10;"Verify the accuracy of the automated classification of ""eosinophils"" cells and correct any incorrect classifications, if any."
+few_shot;0,8;10;Explore the classified cell images with low confidence levels and correct any misclassifications, providing explanations for the corrections.
+few_shot;0,8;10;Check the table showing the type of cell, number of detected cells, reference range, and classification of their quantity, and validate the accuracy of the information provided.
+few_shot;0,8;2;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,8;2;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,8;2;Validate the automatic classification of at least 5 different cell types on the dashboard, providing feedback where necessary.
+few_shot;0,8;2;Compare the reference ranges provided by the system for each cell type with the rhinocytologist's own reference ranges, and correct any discrepancies.
+few_shot;0,8;2;Review the classified cell images and provide feedback on the accuracy of the system's classification, specifically for low-confidence classifications.
+few_shot;0,8;2;Use the system to identify and correct any inconsistencies in cell classification across multiple images of the same sample.
+few_shot;0,8;2;Assess the system's ability to detect and classify rare or unusual cell types, and provide feedback on the accuracy of these classifications.
+few_shot;0,8;7;"As a doctor specializing in rhinocytology, review the classification of a cell marked as ""muciparous"" and correct errors, if any."
+few_shot;0,8;7;"Identify cells that are misclassified in class ""ciliated"" and correct misclassifications and explanations, if any."
+few_shot;0,8;7;"Validate the classification of a cell marked as ""red blood cells"" and provide a reason why the system's classification is incorrect."
+few_shot;0,8;7;Review the table showing the type of cell, number of detected cells, reference range, and classification of their quantity, and identify any discrepancies or errors.
+few_shot;0,8;7;Use the classified cell images to validate the system's classification and correct any errors, providing explanations for the corrections.
+few_shot;0,8;7;"Attempt to correct the classification of a cell marked as ""metaplastic"" and understand the reasons for the system's initial classification."
+few_shot;0,8;7;Explore the system's ability to display classified cell images categorized by confidence level (low, medium, high) and use this information to validate or correct classifications.
+few_shot;0,8;8;Check the classification of ciliated cells in an image and correct any errors, if present.
+few_shot;0,8;8;Evaluate the accuracy of the system's automatic classification of epithelial cells and correct any incorrect classifications.
+few_shot;0,8;8;Review the dashboard to understand the overall performance of the system in identifying and classifying various cell types.
+few_shot;0,8;8;Go through the table displaying test results and assess the system's ability to provide accurate counts and references for each cell type.
+few_shot;0,8;8;Identify a cell type with low confidence classification and assess the system's ability to provide an explanation for the classification.
+few_shot;0,8;8;Correct a previously incorrect classification of a mast cell and provide a reason for the mistake.
+few_shot;0,8;9;"Identify and correct a cell that has been misclassified as a ""mucus-producing cell"" when it is actually a ""mast cell""."
+few_shot;0,8;9;"Review the classification of a cell labeled as ""low-confidence"" and verify that the correct classification is provided."
+few_shot;0,8;9;"Correct the classification of a cell that was incorrectly classified as a ""ciliated cell"" when it is actually a ""metaplastic cell""."
+few_shot;0,8;9;"Validate the number of detected ""epithelial cells"" in a test result and ensure it matches the actual count."
+few_shot;0,8;9;"Confirm that the classified images of ""red blood cells"" are accurately displayed with their corresponding confidence levels."
+few_shot;0,8;9;"Find and correct a cell that has been incorrectly classified as a ""lymphocyte"" when it is actually a ""neutrophil""."
+few_shot;0,8;9;Review the test results and verify that the reference ranges for cell quantities are accurate.
+few_shot;0,8;9;"Correct the classification of a cell that was incorrectly labeled as ""artifacts"" when it is actually a ""bacteria""."
+few_shot;0,8;9;"Verify that the system correctly identifies and displays ""eosinophils"" in the classified cell images."
+few_shot;0,8;9;"Identify and correct a cell that has been misclassified as a ""metaplastic cell"" when it is actually a ""mast cell""."
+few_shot;0,8;9;"Confirm that the system allows for accurate validation and correction of classifications for ""ciliated cells""."
+few_shot;0,7;1;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,7;1;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,7;1;Review the dashboard to ensure that the displayed information is accurate and complete.
+few_shot;0,7;1;Validate the classification of a cell image and mark it as “Correct” or “Incorrect” if necessary.
+few_shot;0,7;1;Correct the classification of a cell image by selecting a new class and providing reasons why the original classification was wrong.
+few_shot;0,7;1;Verify that the reference range for the detected cells is displayed correctly.
+few_shot;0,7;1;Examine the classified cell images categorized by confidence level (low, medium, high) to ensure that they are accurate and complete.
+few_shot;0,7;1;Check the number of detected cells and ensure that it is accurate.
+few_shot;0,7;1;Validate the explanation provided by the system for the classification of a cell and correct it if necessary.
+few_shot;0,7;6;"Check the classification of a ""muciparous"" cell and verify that the reference range is correctly displayed."
+few_shot;0,7;6;"Identify a misclassified ""ciliated"" cell and correct the classification, providing a reason for the correction."
+few_shot;0,7;6;Browse the dashboard to understand the overall test results, including the type of cell, number of detected cells, and classification of their quantity.
+few_shot;0,7;6;"Validate the classification of a ""lymphocyte"" cell as ""Correct"" or ""Incorrect"" and, if incorrect, correct it by selecting a new class and providing a reason for the correction."
+few_shot;0,7;6;Review the classified cell images, categorized by confidence level, to understand the system's accuracy.
+few_shot;0,7;7;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,7;7;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,7;7;Review the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity. Is the information accurate?
+few_shot;0,7;7;View the classified cell images categorized by confidence level (low, medium, high). Are the images clear and easy to understand?
+few_shot;0,7;7;Mark the classification of cells as “Correct” or “Incorrect” and correct it if necessary. Provide reasons why the original classification was wrong.
+few_shot;0,7;7;Try to reconfigure the model by correcting explanations and validating classifications. Does the system provide sufficient feedback to support this process?
+few_shot;0,7;8;Check the classification of a cell and correct any errors if the classification is incorrect.
+few_shot;0,7;8;"Validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide a reason for the classification."
+few_shot;0,7;8;Review the classified cell images and identify any misclassifications.
+few_shot;0,7;8;Correct the classification of a cell by selecting a new class and providing a reason for the correction.
+few_shot;0,7;8;Validate the system's classification of a group of cells and identify any errors or misclassifications.
+few_shot;0,7;8;Review the test results table and identify any discrepancies between the system's classification and the user's validation.
+few_shot;0,7;8;Correct the classification of a cell with low confidence level and provide a reason for the correction.
+few_shot;0,7;8;Validate the system's classification of a specific cell type (e.g., muciparous cells) and correct any errors if found.
+few_shot;0,7;9;Go to the dashboard and check the test results table, paying attention to the columns showing cell types and quantities.
+few_shot;0,7;9;"Identify a cell in the ""classified cells"" page that was classified with low confidence and try to understand why it was classified that way."
+few_shot;0,7;9;"Go to the ""classified cells"" page and validate the classification of a cell that was correctly identified as an ""eosinophil""."
+few_shot;0,7;9;Find a cell that was misclassified and try to correct the classification by selecting a new class and providing a reason why the original classification was incorrect.
+few_shot;0,7;9;Review the table showing classified cells and check that the quantities are correctly displayed for each cell type.
+few_shot;0,6;1;"Explore the classified cells table and identify the number of cells classified as ""muciparous"" and check if there are any errors in the classification, if so, correct them."
+few_shot;0,6;1;"Review the classified cell images and identify cells that were misclassified as ""ciliated"" and correct the misclassifications, providing explanations for the corrections."
+few_shot;0,6;1;"Validate the automatic classification of a ""red blood cell"" and correct any errors, if present."
+few_shot;0,6;1;Check the test results table and ensure that the reference range for each cell type is displayed correctly.
+few_shot;0,6;1;"Review the classified cell images and provide reasons for correcting the classification of a ""lymphocyte"" that was originally misclassified."
+few_shot;0,6;1;"Identify and correct any errors in the classification of ""metaplastic cells"" in the classified cells table."
+few_shot;0,6;2;"Validate the classification of a cell marked as ""muciparous"" and correct errors, if any."
+few_shot;0,6;2;"Check the classification of a cell classified as ""ciliated"" and identify any misclassifications or incorrect explanations."
+few_shot;0,6;2;"Review the reference range for the number of detected ""eosinophils"" cells and ensure it is accurate."
+few_shot;0,6;2;"Verify the confidence level of a cell classified as ""lymphocyte"" and ensure it is correctly displayed."
+few_shot;0,6;2;Browse through the classified cell images and ensure they are accurately categorized by confidence level.
+few_shot;0,6;2;"Validate the classification of a cell marked as ""epithelial"" and correct errors, if any."
+few_shot;0,6;2;"Identify and correct any misclassifications of ""mast cells"" and provide explanations for the incorrect classifications."
+few_shot;0,6;4;"Check the classification of a cell marked as ""muciparous"" and correct errors, if any."
+few_shot;0,6;4;"Identify cells misclassified in class ""ciliated"" and correct misclassifications and explanations, if any."
+few_shot;0,6;4;Review the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity, and ensure it is accurate.
+few_shot;0,6;4;"Validate the automatic classification of a cell image, marking it as ""Correct"" or ""Incorrect"" and providing reasons why the original classification was wrong, if necessary."
+few_shot;0,6;4;"Use the ""classified cell images"" feature to visualize a cell image and ensure it is correctly classified."
+few_shot;0,6;4;Navigate to the dashboard and understand the overall layout and organization of the system's output.
+few_shot;0,6;8;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,6;8;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,6;8;Review the test results table and verify that the type of cell, number of detected cells, reference range, and classification of quantity are correctly displayed for a specific cell type.
+few_shot;0,6;8;Examine the classified cell images and verify that they are correctly categorized by confidence level (low, medium, high).
+few_shot;0,6;8;"Validate the system's classification of a cell as ""Correct"" or ""Incorrect"" and, if incorrect, correct it by selecting a new class and providing reasons why the original classification was wrong."
+few_shot;0,6;8;Compare the system's automatic classification with the correct classification and identify any discrepancies, then correct the misclassifications and provide explanations.
+few_shot;0,6;9;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,6;9;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,6;9;Review the test results table to ensure that the number of detected cells and their classification are accurate.
+few_shot;0,6;9;Browse through the classified cell images and verify that they are correctly categorized by confidence level (low, medium, high).
+few_shot;0,6;9;Validate the automatic classification of 5 random cells and correct any incorrect classifications, providing reasons for the corrections.
+few_shot;0,5;10;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,5;10;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,5;10;Review the results of the automatic cell classification and validate the classification of 5 randomly selected cells.
+few_shot;0,5;10;Compare the confidence levels of 3 cell classifications and explain why you would or would not trust the system's classification.
+few_shot;0,5;10;Correct the classification of a cell that was misclassified as ‘‘red blood cell’’ and provide a reason for the correction.
+few_shot;0,5;10;Verify that the system is displaying the correct reference range for a specific cell type and correct it if necessary.
+few_shot;0,5;2;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,5;2;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,5;2;Review the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity for accuracy.
+few_shot;0,5;2;Validate the classification of a cell with low confidence level and provide a reason for correction, if necessary.
+few_shot;0,5;2;Compare the classified cell images with the original images from the microscope to ensure accuracy.
+few_shot;0,5;2;Correct a cell misclassified as ‘‘metaplastic’’ and provide a reason for the correction.
+few_shot;0,5;2;Check the system's ability to detect and classify ‘‘eosinophils’’ and correct errors, if any.
+few_shot;0,5;2;Review the dashboard to ensure that all classified cells are accurately displayed and categorized by confidence level.
+few_shot;0,5;4;Check the classification of class 'muciparous' cells and correct errors, if any.
+few_shot;0,5;4;Identify cells misclassified in class 'ciliated' and correct misclassifications and explanations, if any.
+few_shot;0,5;4;Review the test results table and verify the accuracy of the cell counts and reference ranges.
+few_shot;0,5;4;Browse through the classified cell images and examine the confidence levels assigned to each image.
+few_shot;0,5;4;"Validate the classification of a specific cell image and mark it as ""Correct"" or ""Incorrect"" if necessary."
+few_shot;0,5;4;Correct the classification of a cell image and provide a reason for the change.
+few_shot;0,5;4;Examine the dashboard to understand the overall performance of the system and identify areas for improvement.
+few_shot;0,5;9;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,5;9;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,5;9;Review the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity to ensure accuracy.
+few_shot;0,5;9;Validate the classification of a cell image with a low confidence level and try to correct it.
+few_shot;0,5;9;Compare the classified cell images with the original images to identify any discrepancies.
+few_shot;0,5;9;Use the dashboard to navigate to a specific cell classification and review the corresponding image and classification.
+few_shot;0,5;9;Try to correct a cell classification that was marked as incorrect by the system and provide a reason for the correction.
+few_shot;0,4;1;"As a rhinocytologist, validate the classification of a cell marked as ""muciparous"" and correct any errors, providing a reason for the correction."
+few_shot;0,4;1;Review the table displaying test results and identify any discrepancies in the number of detected cells or reference range for a specific cell type.
+few_shot;0,4;1;"Examine the classified cell images, categorized by confidence level, and identify any cells that may have been misclassified as ""ciliated""."
+few_shot;0,4;1;"Mark a cell classification as ""Incorrect"" and correct it by selecting a new class, providing a reason for the correction, and reconfiguring the model accordingly."
+few_shot;0,4;1;Use the system's features to validate and correct the explanations for a set of automatically classified cells, ensuring that the corrected classifications are accurate and consistent.
+few_shot;0,4;10;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,4;10;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,4;10;Review the test results table and ensure that the number of detected cells and reference range are accurate.
+few_shot;0,4;10;Validate the classification of a cell with low confidence level and provide a reason for the correction, if necessary.
+few_shot;0,4;10;Compare the classified cell images with the original image and identify any discrepancies.
+few_shot;0,4;10;Use the dashboard to navigate to a specific cell classification and verify that the correct classification is displayed.
+few_shot;0,4;2;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,4;2;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,4;2;Verify that the system displays the correct reference range for a specific type of cell.
+few_shot;0,4;2;Review the classified cell images and ensure that the confidence level is accurately displayed.
+few_shot;0,4;2;Validate the system's automatic classification of a specific cell type and correct any errors.
+few_shot;0,4;2;Use the dashboard to access classified cell images and verify that they are correctly categorized by confidence level.
+few_shot;0,4;2;Check the system's table displaying the type of cell, number of detected cells, reference range, and classification of quantity for accuracy.
+few_shot;0,4;3;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,4;3;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,4;3;Review the test results table and verify that the type of cell, number of detected cells, reference range, and classification of quantity are accurate.
+few_shot;0,4;3;Browse through the classified cell images, categorized by confidence level, and identify any images that may have been misclassified.
+few_shot;0,4;3;Select a cell image that has been incorrectly classified and correct the classification, providing a reason for the correction.
+few_shot;0,4;3;Use the dashboard to navigate to a specific section of the test results and verify that the data is displayed correctly.
+few_shot;0,4;7;Identify and correct the classification of cells in the image with incorrect classification.
+few_shot;0,4;7;Review the test results table and verify that the reference range is accurate for the detected cells.
+few_shot;0,4;7;Check the classified cell images and ensure that the confidence level is correctly displayed for each cell type.
+few_shot;0,4;7;"Validate the classification of a set of cells as ""Correct"" or ""Incorrect"" and provide reasons for any incorrect classifications."
+few_shot;0,4;7;Compare the system's automatic classification with the reference classification and correct any discrepancies.
+few_shot;0,4;7;Review the dashboard to ensure that all detected cells are accounted for in the test results table.
+few_shot;0,4;8;"Check the classification of cells in a nasal cytological preparation and correct errors, if any, in the ""muciparous"" cell classification."
+few_shot;0,4;8;"Identify cells misclassified in the ""ciliated"" class and correct misclassifications and explanations, if any."
+few_shot;0,4;8;Review the test results table and verify that the number of detected cells and the reference range are accurate.
+few_shot;0,4;8;Browse through the classified cell images and verify that they are correctly categorized by confidence level (low, medium, high).
+few_shot;0,4;8;"Validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide a reason for correcting an incorrect classification."
+few_shot;0,4;8;Use the system's features to reconfigure the model based on corrected explanations.
+few_shot;0,3;1;"Identify and correct the classification of cells that were misclassified in the ""classified-cells-wrong.png"" screenshot."
+few_shot;0,3;1;"Review the test results displayed in the ""dashboard.png"" screenshot and ensure that the types of cells, number of detected cells, reference range, and classification of their quantity are accurate."
+few_shot;0,3;1;"Validate the classification of cells in the ""classified-cells-correct.png"" screenshot and mark any incorrect classifications."
+few_shot;0,3;1;Use the system to access and view the classified cell images, categorized by confidence level, and ensure that the images are correctly labeled.
+few_shot;0,3;1;"Correct the classification of a cell that was incorrectly identified in the ""classified-cells-wrong.png"" screenshot, providing a reason for the correction."
+few_shot;0,3;10;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,3;10;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,3;10;Review the table showing the type of cell, the number of detected cells, the reference range, and the classification of their quantity. Are the reference ranges accurate?
+few_shot;0,3;10;Examine the classified cell images, categorized by confidence level (low, medium, high). Are the images correctly classified?
+few_shot;0,3;10;Validate the classification of a cell as “Correct” or “Incorrect”. If incorrect, correct it by selecting a new class and provide reasons why the original classification was wrong.
+few_shot;0,3;10;Use the system to identify and classify a cell that is not clearly visible in the image. Is the classification accurate?
+few_shot;0,3;10;Compare the automatic classifications provided by the system with your own expertise. Are there any discrepancies? If so, correct the classifications and provide explanations.
+few_shot;0,3;3;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,3;3;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,3;3;Review the table displaying test results and verify that it accurately shows the type of cell, number of detected cells, reference range, and classification of their quantity.
+few_shot;0,3;3;Browse through the classified cell images, categorized by confidence level (low, medium, high), and assess their accuracy.
+few_shot;0,3;3;Select a cell image and validate its classification as “Correct” or “Incorrect”, and if incorrect, correct it by selecting a new class and providing reasons why the original classification was wrong.
+few_shot;0,3;3;Use the dashboard to navigate through different sections of the system and ensure that it provides easy access to the main functionalities.
+few_shot;0,3;4;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,3;4;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,3;4;Review the dashboard to understand the overall classification results and identify any potential issues with the model.
+few_shot;0,3;4;Compare the classified cell images with the original image to verify the accuracy of the classification.
+few_shot;0,3;4;Validate the classification of a cell as ‘‘lymphocyte’’ and provide reasons for any corrections.
+few_shot;0,3;4;Identify a cell that was incorrectly classified and provide a clear explanation for the correct classification.
+few_shot;0,3;4;Review the test results table to ensure that the number of detected cells and reference ranges are accurate.
+few_shot;0,3;4;Access the classified cell images categorized by confidence level and verify that the images are correctly labeled.
+few_shot;0,3;5;"As a doctor specialized in rhinocytology, you are presented with a classification of cells as ""muciparous"" with a low confidence level. Review the classification and correct any errors, if necessary."
+few_shot;0,3;5;You are shown a table displaying the test results, including the type of cell, number of detected cells, reference range, and classification of quantity. Identify any discrepancies in the classification of cells and correct them, if necessary.
+few_shot;0,3;5;You are presented with a classified cell image with a medium confidence level. Validate the classification and, if incorrect, correct it by selecting a new class and providing a reason why the original classification was wrong.
+few_shot;0,3;5;Review the dashboard to ensure that it provides all the necessary information for validation and correction of classifications. Identify any missing or unclear information that would hinder the validation and correction process.
+few_shot;0,3;5;"You are shown a classification of cells as ""ciliated"" with a high confidence level. However, upon reviewing the image, you notice that the cell is actually a different type. Correct the classification and provide a reason why the original classification was incorrect."
+few_shot;0,2;1;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,2;1;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,2;1;Review the table on the dashboard to ensure that the number of detected cells and their classification are accurate.
+few_shot;0,2;1;Verify that the classified cell images are correctly categorized by confidence level (low, medium, high).
+few_shot;0,2;1;Correct the classification of a cell marked as “Incorrect” and provide a reason for the correction.
+few_shot;0,2;1;Check that the reference range for each cell type is displayed correctly in the table on the dashboard.
+few_shot;0,2;3;"As a rhinocytologist, review the classification of a cell marked as ""Incorrect"" in the classified cells table and provide a correct classification."
+few_shot;0,2;3;"Check the confidence level of a cell classified as ""muciparous"" and verify if it is accurate."
+few_shot;0,2;3;Review the test results table and identify any discrepancies between the automatically detected cell types and the expected reference range.
+few_shot;0,2;3;"As a rhinocytologist, validate the classification of a cell marked as ""Correct"" in the classified cells table and provide a reason why the original classification was correct."
+few_shot;0,2;3;Identify and correct any misclassifications of cells in the classified cells table, providing explanations for the corrections.
+few_shot;0,2;3;Review the classified cell images and verify if the confidence levels assigned to each cell are accurate.
+few_shot;0,2;3;As a rhinocytologist, use the dashboard to navigate to the classified cells table and identify any cells that require correction.
+few_shot;0,2;6;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,2;6;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,2;6;Review the test results table and verify that the reference range is accurate for the detected cells.
+few_shot;0,2;6;Browse through the classified cell images and assess the confidence level of the automatic classification.
+few_shot;0,2;6;Select a cell image with a low confidence level and validate its classification as “Correct” or “Incorrect”, providing a reason for any corrections.
+few_shot;0,2;6;Compare the automatic classification of a cell with its corresponding image and identify any discrepancies.
+few_shot;0,2;6;Use the dashboard to navigate through the different sections of the system and locate the classified cell images.
+few_shot;0,2;6;Evaluate the accuracy of the automatic classification of a specific cell type (e.g., eosinophils) and provide feedback on any errors.
+few_shot;0,2;7;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,2;7;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,2;7;Review the test results table and verify that the number of detected cells and reference range are accurate.
+few_shot;0,2;7;Browse through the classified cell images and evaluate the confidence level of each classification.
+few_shot;0,2;7;Validate the classification of a cell as “Correct” or “Incorrect” and provide reasons for incorrect classifications.
+few_shot;0,2;7;Correct the classification of a cell and provide explanations for the change.
+few_shot;0,2;7;Use the dashboard to navigate through the application and access different features.
+few_shot;0,2;7;Evaluate the display of test results and ensure that the information is clear and easy to understand.
+few_shot;0,2;8;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,2;8;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,2;8;Review the test results table and verify that it accurately displays the type of cell, number of detected cells, reference range, and classification of their quantity.
+few_shot;0,2;8;Browse through the classified cell images, categorized by confidence level (low, medium, high), and verify that they are correctly labeled.
+few_shot;0,2;8;Validate the classification of a cell marked as “Incorrect” and provide a reason for the correction, if necessary.
+few_shot;0,2;8;Use the system to correct the classification of a cell and provide a justification for the change.
+few_shot;0,2;8;Verify that the system updates the test results table after corrections have been made.
+few_shot;0,1;10;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,1;10;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,1;10;Review the table on the dashboard to ensure that the number of detected cells and reference range are accurate.
+few_shot;0,1;10;Examine the classified cell images and verify that they are correctly categorized by confidence level.
+few_shot;0,1;10;Select a cell image that was misclassified and correct the classification, providing a reason for the correction.
+few_shot;0,1;10;Use the validation feature to mark a classification as “Incorrect” and correct it, then verify that the corrected classification is reflected in the table on the dashboard.
+few_shot;0,1;2;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,1;2;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,1;2;Review the test results on the dashboard and verify that the number of detected cells and reference range are accurate.
+few_shot;0,1;2;Validate the classification of a cell image with low confidence level and provide a reason for the correction, if necessary.
+few_shot;0,1;2;Compare the classification of a cell image with medium confidence level to the original classification and provide a reason for the correction, if necessary.
+few_shot;0,1;2;Check the accuracy of the classification of a cell image with high confidence level and provide a reason for the correction, if necessary.
+few_shot;0,1;3;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,1;3;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,1;3;Validate the automatic classification of a set of cells and correct any incorrect classifications.
+few_shot;0,1;3;Review the table showing the type of cell, the number of detected cells, the reference range, and the classification of their quantity, and identify any discrepancies.
+few_shot;0,1;3;Use the classified cell images to verify the accuracy of the automatic classification and correct any errors.
+few_shot;0,1;3;Select a cell image and provide a reason for why the original classification was incorrect, and then correct the classification.
+few_shot;0,1;4;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,1;4;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,1;4;Review the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity to ensure accuracy.
+few_shot;0,1;4;Verify that the classified cell images are correctly categorized by confidence level (low, medium, high).
+few_shot;0,1;4;Validate the automatic classifications of a set of cells and correct any incorrect classifications, providing reasons for the corrections.
+few_shot;0,1;4;Use the dashboard to navigate to a specific section of the application and verify that the relevant features are accessible and functional.
+few_shot;0,1;4;Compare the original classification of a cell with the corrected classification and ensure that the correction is reflected in the table and the classified cell images.
+few_shot;0,1;5;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,1;5;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,1;5;Review the table displaying test results and verify that the type of cell, number of detected cells, reference range, and classification of their quantity are accurate.
+few_shot;0,1;5;Browse through the classified cell images, categorized by confidence level (low, medium, high), and verify that the images are correctly labeled.
+few_shot;0,1;5;Select a cell image with a low confidence level and correct the classification, providing a reason for the correction.
+few_shot;0,1;5;Use the validation and correction feature to mark a cell classification as “Incorrect” and provide a reason for the correction.
+few_shot;0,1;5;Verify that the system updates the classification and provides a new classification after correction.
+few_shot;0,1;6;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,1;6;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,1;6;Review the table on the dashboard to ensure that the number of detected cells and their classification are accurate.
+few_shot;0,1;6;Validate the classification of a cell with a low confidence level and provide a reason for the correction, if necessary.
+few_shot;0,1;6;Compare the classified cell images with the original image to ensure that the correct cell type is identified.
+few_shot;0,1;6;Use the system to identify and correct any misclassifications of metaplastic cells.
+few_shot;0,1;6;Review the reference range for each cell type to ensure that it is accurate and up-to-date.
+few_shot;0,1;6;Use the system to identify and correct any misclassifications of mast cells.
+few_shot;0,1;6;Validate the classification of a cell with a medium confidence level and provide a reason for the correction, if necessary.
+few_shot;0,1;7;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,1;7;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,1;7;Review the table showing test results and verify that the reference range is accurate for the detected cells.
+few_shot;0,1;7;Examine the classified cell images categorized by confidence level and identify any images with low confidence.
+few_shot;0,1;7;Validate the classification of a specific cell type (e.g., eosinophils) and correct any incorrect classifications.
+few_shot;0,1;7;Use the validation/correction features to reconfigure the model by correcting multiple misclassifications and providing explanations for each correction.
+few_shot;0,1;8;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,1;8;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,1;8;Review the table displaying test results and verify that the type of cell, number of detected cells, reference range, and classification of their quantity are accurate.
+few_shot;0,1;8;Browse through the classified cell images, categorized by confidence level (low, medium, high), and verify that the images are correctly labeled.
+few_shot;0,1;8;Select a cell image with a low confidence level and validate the classification as “Correct” or “Incorrect”. If incorrect, correct the classification and provide a reason why the original classification was wrong.
+few_shot;0,1;8;Use the validation and correction features to reconfigure the model by correcting multiple misclassifications and providing explanations for each correction.
+few_shot;0,1;9;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0,1;9;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0,1;9;Validate the automatic classification of a set of cells and correct any incorrect classifications.
+few_shot;0,1;9;Review the confidence level of classified cell images and provide feedback on the accuracy of the system.
+few_shot;0,1;9;Use the dashboard to access and review the classified cell images and correct any incorrect classifications.
+few_shot;0,1;9;Check the reference range for a specific cell type and provide feedback on the accuracy of the system's classification.
+few_shot;0,1;9;Correct the classification of a cell that was misclassified by the system and provide a reason for the correction.
+few_shot;0;10;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0;10;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0;10;Review the test results table on the dashboard and verify that the cell types, numbers, and reference ranges are accurate.
+few_shot;0;10;Browse through the classified cell images and ensure that they are correctly categorized by confidence level.
+few_shot;0;10;Select a cell image and mark its classification as “Incorrect”. Then, correct the classification and provide a reason for the correction.
+few_shot;0;10;Validate the automatic classification of a cell image and mark it as “Correct” if it is accurate. If not, correct the classification and provide a reason for the correction.
+few_shot;0;2;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0;2;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0;2;Review the test results table on the dashboard and verify that the cell types, numbers, and reference ranges are accurate.
+few_shot;0;2;Browse through the classified cell images and ensure that they are correctly categorized by confidence level.
+few_shot;0;2;Select a cell image and mark its classification as “Incorrect”. Then, correct the classification and provide a reason for the correction.
+few_shot;0;2;Validate the automatic classification of a cell image and mark it as “Correct” if it is accurate. If not, correct the classification and provide a reason for the correction.
+few_shot;0;3;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0;3;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0;3;Review the test results table on the dashboard and verify that the cell types, numbers, and reference ranges are accurate.
+few_shot;0;3;Browse through the classified cell images and ensure that they are correctly categorized by confidence level.
+few_shot;0;3;Select a cell image and mark its classification as “Incorrect”. Then, correct the classification and provide a reason for the correction.
+few_shot;0;3;Validate the automatic classification of a cell image and mark it as “Correct” if it is accurate. If not, correct the classification and provide a reason for the correction.
+few_shot;0;4;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0;4;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0;4;Review the test results table on the dashboard and verify that the cell types, numbers, and reference ranges are accurate.
+few_shot;0;4;Browse through the classified cell images and ensure that they are correctly categorized by confidence level.
+few_shot;0;4;Select a cell image and mark its classification as “Incorrect”. Then, correct the classification and provide a reason for the correction.
+few_shot;0;4;Validate the automatic classification of a cell image and mark it as “Correct” if it is accurate. If not, correct the classification and provide a reason for the correction.
+few_shot;0;5;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0;5;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0;5;Review the test results table on the dashboard and verify that the cell types, numbers, and reference ranges are accurate.
+few_shot;0;5;Browse through the classified cell images and ensure that they are correctly categorized by confidence level.
+few_shot;0;5;Select a cell image and mark its classification as “Incorrect”. Then, correct the classification and provide a reason for the correction.
+few_shot;0;5;Validate the automatic classification of a cell image and mark it as “Correct” if it is accurate. If not, correct the classification and provide a reason for the correction.
+few_shot;0;6;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0;6;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0;6;Review the test results table on the dashboard and verify that the cell types, numbers, and reference ranges are accurate.
+few_shot;0;6;Browse through the classified cell images and ensure that they are correctly categorized by confidence level.
+few_shot;0;6;Select a cell image and mark its classification as “Incorrect”. Then, correct the classification and provide a reason for the correction.
+few_shot;0;6;Validate the automatic classification of a cell image and mark it as “Correct” if it is accurate. If not, correct the classification and provide a reason for the correction.
+few_shot;0;7;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0;7;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0;7;Review the test results table on the dashboard and verify that the cell types, numbers, and reference ranges are accurate.
+few_shot;0;7;Browse through the classified cell images and ensure that they are correctly categorized by confidence level.
+few_shot;0;7;Select a cell image and mark its classification as “Incorrect”. Then, correct the classification and provide a reason for the correction.
+few_shot;0;7;Validate the automatic classification of a cell image and mark it as “Correct” if it is accurate. If not, correct the classification and provide a reason for the correction.
+few_shot;0;8;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0;8;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0;8;Review the test results table on the dashboard and verify that the cell types, numbers, and reference ranges are accurate.
+few_shot;0;8;Browse through the classified cell images and ensure that they are correctly categorized by confidence level.
+few_shot;0;8;Select a cell image and mark its classification as “Incorrect”. Then, correct the classification and provide a reason for the correction.
+few_shot;0;8;Validate the automatic classification of a cell image and mark it as “Correct” if it is accurate. If not, correct the classification and provide a reason for the correction.
+few_shot;0;9;Check the classification of class ‘‘muciparous’’ cells and correct errors, if any.
+few_shot;0;9;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+few_shot;0;9;Review the test results table on the dashboard and verify that the cell types, numbers, and reference ranges are accurate.
+few_shot;0;9;Browse through the classified cell images and ensure that they are correctly categorized by confidence level.
+few_shot;0;9;Select a cell image and mark its classification as “Incorrect”. Then, correct the classification and provide a reason for the correction.
+few_shot;0;9;Validate the automatic classification of a cell image and mark it as “Correct” if it is accurate. If not, correct the classification and provide a reason for the correction.
+one_shot;1;1;Review the classified cell images in the 'ciliated' category and assess the confidence level of the system's classification.
+one_shot;1;1;Compare the number of 'ciliated' cells detected by the system with the reference range and identify any discrepancies.
+one_shot;1;1;Examine the classified cell images with low confidence levels and consider whether the system's classification is correct or not.
+one_shot;1;1;"Validate the system's classification of 'eosinophils' and mark it as ""Correct"" or ""Incorrect"" accordingly."
+one_shot;1;1;Identify and highlight any 'mast cells' that are misclassified by the system and provide reasons for the correction.
+one_shot;1;1;Review the system's classification of 'red blood cells' and assess whether it is accurate or not.
+one_shot;1;1;Compare the system's classification of 'lymphocytes' with the reference range and identify any inconsistencies.
+one_shot;1;1;Evaluate the system's classification of 'metaplastic cells' and consider whether it is correct or not.
+one_shot;1;1;Assess the accuracy of the system's classification of 'mucus-producing cells' and provide feedback accordingly.
+one_shot;1;1;Compare the system's classification of 'neutrophils' with the reference range and identify any discrepancies.
+one_shot;1;1;Review the test results table and verify that the type of cell, number of detected cells, and classification of their quantity are accurate.
+one_shot;1;1;"Validate the system's classification of 'epithelial cells' and mark it as ""Correct"" or ""Incorrect"" accordingly."
+one_shot;1;1;Identify cells that are not classified by the system (e.g., artifacts or bacteria) and provide explanations for the classification.
+one_shot;1;10;Look at the table showing cell type, count, reference range, and classification, and compare it with the system's automatic classification. Provide any discrepancies found.
+one_shot;1;10;"From the ""classified cells"" page, navigate to the images with low confidence levels and investigate how the confidence levels were assigned."
+one_shot;1;10;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+one_shot;1;10;Review the system's automatic classification of cell images and assess if the classifications align with the types of cells typically found in nasal cytological preparations.
+one_shot;1;10;"Examine the ""classified cells-correct.png"" image and classify the cells in the image using the system's categories."
+one_shot;1;10;Assess whether the system's automatic classification of 'metaplastic cells' is consistent with the typical morphological features of these cells.
+one_shot;1;10;"On the ""classified cells-wrong.png"" image, validate which cell classifications are incorrect and provide explanations for the incorrect classifications."
+one_shot;1;10;From the dashboard, retrieve the system's reference ranges for 'ciliated cells' and verify if the ranges are consistent with typical clinical practices in rhinocytology.
+one_shot;1;10;Identify the types of cells that are most commonly misclassified by the system and provide possible reasons for these misclassifications.
+one_shot;1;10;Compare the system's automatic classification of epithelial cells with your expertise in rhinocytology and provide feedback on any discrepancies found.
+one_shot;1;4;Examine the table displaying the type of cells, number of detected cells, reference range, and quantity classification. Identify any discrepancies and flag them for further review.
+one_shot;1;4;View the classified cell images for a specific confidence level (e.g., low, medium, high). Assess the accuracy of the classification and determine if any corrections are needed.
+one_shot;1;4;Locate a cell image that was previously marked as incorrect. Try to understand why the original classification was incorrect and provide a revised explanation.
+one_shot;1;4;Search for a specific type of cell (e.g., epithelial cells) in the results table. Evaluate the system's ability to detect and classify these cells.
+one_shot;1;4;Review the test results for a particular nasal cytological preparation. Identify any patterns or trends in the classification accuracy and suggest potential improvements to the model.
+one_shot;1;6;Identify cells that were misclassified by the system and correct the misclassifications, providing explanations for the corrections.
+one_shot;1;6;Review the table showing test results and assess the accuracy of the cell counts and classification quantities.
+one_shot;1;6;Examine the classified cell images, paying attention to the confidence level assigned by the system.
+one_shot;1;6;"Select a cell image and evaluate the system's classification, marking it as ""Correct"" or ""Incorrect"", and providing reasoning for any corrections."
+one_shot;1;7;Identify and correct the classification of a ciliated cell with a low confidence level, providing a reason for the correction.
+one_shot;1;7;Review the table showing the test results, focusing on the types of cells detected and their quantities, and ensure that the reference ranges are accurate.
+one_shot;1;7;Browse through the classified cell images, selecting one with high confidence in classification, and determine whether the classification matches the expected result.
+one_shot;1;7;"Mark a misclassified cell as ""Incorrect"" and provide an explanation for the original classification error, including the correct classification."
+one_shot;1;7;Compare the reference ranges for a specific cell type across multiple test results and ensure that the values are consistent.
+one_shot;1;7;Validate the accuracy of a cell classification with a high confidence level, confirming whether it aligns with expected results.
+one_shot;1;8;Identify cells that are incorrectly classified as red blood cells and explain why the system made this mistake.
+one_shot;1;8;Suppose the system incorrectly classified a cell as a lymphocyte. How would you correct this classification and provide a reason for the system's error?
+one_shot;1;8;Go to the dashboard and find the table showing the type of cell, the number of detected cells, and the reference range. What information do you need to see to validate the accuracy of the cell classification?
+one_shot;1;8;"Look at the classified cell images, categorized by confidence level. What happens if you mark a cell classification as ""Incorrect""?"
+one_shot;1;8;"How would you correct the classification of a cell if the system's confidence level is ""low""? What additional information or explanation would you provide?"
+one_shot;1;8;"Go to the interface where you can correct misclassifications. Identify cells classified as ""artifacts"" and explain why some of these classifications might be incorrect."
+one_shot;0,9;1;Can you validate the correctness of the classification of a cell as a ciliated cell and correct any misclassifications, providing reasons why the original classification was wrong?
+one_shot;0,9;1;Review the display of test results, including the type of cell, number of detected cells, reference range, and classification of their quantity.
+one_shot;0,9;1;Examine the classified cell images, categorized by confidence level (low, medium, high), and confirm that they match the cell types listed in the test results.
+one_shot;0,9;1;Identify a cell that was misclassified by the system and correct the classification, providing explanations for the error.
+one_shot;0,9;1;Assess the overall accuracy of the system's automatic cell classification and suggest any improvements to the model.
+one_shot;0,9;2;As a rhinocytologist, review the classification of a cell and assess the confidence level of the system's classification.
+one_shot;0,9;2;"Validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide reasons for any incorrect classifications."
+one_shot;0,9;2;Identify a cell that was misclassified by the system and explain why the correct classification is more accurate.
+one_shot;0,9;2;Review the table of test results and ensure that it accurately reflects the types of cells detected, their numbers, and their classifications.
+one_shot;0,9;2;Browse through the classified cell images and assess the quality of the images and their corresponding classifications.
+one_shot;0,9;2;As a rhinocytologist, correct a cell misclassification by selecting a new class and providing a clear explanation for the change.
+one_shot;0,9;2;Assess the system's ability to detect and classify rare or unusual cells, such as metaplastic cells or mucus-producing cells.
+one_shot;0,9;3;Identify cells that were misclassified by the system and correct the classification, providing a clear explanation for the correction.
+one_shot;0,9;3;Review the confidence levels assigned by the system to each cell classification and assess their accuracy.
+one_shot;0,9;3;Evaluate the accuracy of the system's cell count and compare it to your own estimates.
+one_shot;0,9;3;Classify a cell image that has not been previously classified by the system.
+one_shot;0,9;3;Assess the system's ability to distinguish between similar cell types, such as metaplastic cells and mucus-producing cells.
+one_shot;0,9;3;Evaluate the system's classification of a group of cells with low confidence levels.
+one_shot;0,9;3;Review the system's classification of a cell image that you have previously marked as incorrect.
+one_shot;0,9;3;Assess the system's ability to identify and classify rare cell types, such as mast cells.
+one_shot;0,9;3;Evaluate the system's classification of a cell image with a high level of noise or artifacts.
+one_shot;0,9;5;Identify the cell classification for a particular image and provide a reason for the correctness of the classification (if marked as correct) or an explanation for the misclassification (if marked as incorrect) in one of the low-confidence cell images.
+one_shot;0,9;5;Compare the automatic classification of a group of cells with the expected classification based on a specific reference range and indicate which cells, if any, are misclassified.
+one_shot;0,9;5;Evaluate the accuracy of the system's automatic classification for a specific cell type (e.g., epithelial cells) by reviewing the classified images and correcting any misclassifications.
+one_shot;0,9;5;Review the test results table and identify any discrepancies between the system's classification and your expert knowledge, and take corrective actions if necessary.
+one_shot;0,9;5;Explore the classified cell images categorized by confidence level and identify any patterns or trends in the system's performance for each type of cell.
+one_shot;0,9;5;Validate the system's automatic classification for a particular image and provide a reason for your decision (correct, incorrect, or uncertain) based on your expertise.
+one_shot;0,9;6;Identify a cell image that has been misclassified and verify if it matches the correct classification provided by the system.
+one_shot;0,9;6;Check the reference range for a specific cell type and compare it with the number of detected cells.
+one_shot;0,9;6;Open the classified cell images and verify if the images are correctly categorized by confidence level.
+one_shot;0,9;6;"Mark a classification as ""Incorrect"" and provide a reason why the original classification was wrong."
+one_shot;0,9;6;Correct a misclassified cell and verify if the correct classification is updated in the table.
+one_shot;0,9;6;Compare the system's classification with the doctor's expertise and identify any discrepancies.
+one_shot;0,9;6;Check the explanations provided by the system for a cell classification and verify if they are accurate.
+one_shot;0,9;6;Review the dashboard to verify if the system is displaying the correct information for the test results.
+one_shot;0,9;6;Identify a cell type that is not correctly classified and provide a reason why the classification is incorrect.
+one_shot;0,9;7;"Identify and correct cells marked as incorrectly classified in the ""ciliated"" category, and explain why the original classification was incorrect."
+one_shot;0,9;7;Review the reference range for a specific cell type and verify if the detected number of cells falls within the expected range.
+one_shot;0,9;7;Browse through the classified cell images and select an image with a low confidence level to re-evaluate its classification.
+one_shot;0,9;7;Examine the table displaying test results and determine if the automatic classification for a particular cell type matches the expected reference range.
+one_shot;0,9;7;Identify and correct a misclassified cell, providing a clear explanation for the correction, and submit the updated classification for review.
+one_shot;0,9;7;Verify the accuracy of the system's automatic classification for a specific cell type by comparing it to the actual image.
+one_shot;0,9;7;Review the confidence levels assigned to classified cell images and determine if they are based on accurate characteristics of the cells.
+one_shot;0,8;1;Validate the classification of ciliated cells in the current dataset and identify if the system correctly classified all cells
+one_shot;0,8;1;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+one_shot;0,8;1;Review the test results table to ensure that the system accurately displays the type of cell, number of detected cells, reference range, and classification of their quantity
+one_shot;0,8;1;Explore the classified cell images and verify that the system correctly categorizes them by confidence level (low, medium, high)
+one_shot;0,8;1;"Mark a random selection of classifications as ""Incorrect"" and provide reasons why the original classification was wrong, then verify that the system correctly updates the classification and displays the new classification"
+one_shot;0,8;10;Review the classification of a ciliated cell and correct the classification if it is incorrect, providing a clear explanation for the correction.
+one_shot;0,8;10;Evaluate the accuracy of the system's classification of red blood cells and mark any incorrect classifications.
+one_shot;0,8;10;Examine the classified cell images for epithelial cells and mark any classifications that are not accurate.
+one_shot;0,8;10;Use the dashboard to verify the number of detected cells and the reference range for a specific type of cell.
+one_shot;0,8;10;Identify and correct any misclassifications of lymphocytes and provide a clear reason for the correction.
+one_shot;0,8;10;Review the test results for metaplastic cells and confirm that the system has correctly identified their quantity.
+one_shot;0,8;10;Classify a cell that has been incorrectly identified as a mucus-producing cell and provide a clear explanation for the correction.
+one_shot;0,8;10;Validate the system's classification of neutrophils and mark any incorrect classifications.
+one_shot;0,8;2;Identify an incorrectly classified cell and correct the classification, providing a brief explanation for the correction.
+one_shot;0,8;2;Review the confidence levels assigned to classified cell images and suggest improvements to the system's classification algorithm.
+one_shot;0,8;2;Examine the reference ranges provided for each cell type and suggest adjustments to improve the accuracy of cell classification.
+one_shot;0,8;2;Validate the system's automatic classification of a ciliated cell and, if necessary, correct the classification and provide a reason for the correction.
+one_shot;0,8;2;Browse through the classified cell images and suggest ways to improve the system's ability to classify metaplastic cells accurately.
+one_shot;0,8;3;"Identify and correct the classification of a cell that was misclassified as ""ciliated""."
+one_shot;0,8;3;Review the table showing test results and identify any discrepancies between the automatic classification and your expert knowledge.
+one_shot;0,8;3;Examine the classified images of cells and determine why the system has assigned a low confidence level to certain classifications.
+one_shot;0,8;3;Validate the accuracy of the system's automatic classification of epithelial cells and, if necessary, correct any incorrect classifications.
+one_shot;0,8;3;Review the dashboard and identify any patterns or trends in the misclassifications provided by the system.
+one_shot;0,8;3;Browse through the classified cell images and check if the system has correctly identified any mast cells.
+one_shot;0,8;3;Examine the system's classification of a cell that you know to be a metaplastic cell and correct any incorrect classifications.
+one_shot;0,8;3;Validate the accuracy of the system's automatic classification of red blood cells and, if necessary, correct any incorrect classifications.
+one_shot;0,8;3;"Review the table showing test results and identify any cells that have been incorrectly classified as ""artifacts""."
+one_shot;0,8;6;Identify cells that are incorrectly classified as ciliated and provide a brief explanation for the correct classification.
+one_shot;0,8;6;Review the confidence level of classified cells and determine if it accurately reflects the classification.
+one_shot;0,8;6;Use the table displaying test results to identify any cells that are outside the reference range and investigate their classification.
+one_shot;0,8;6;Browse through the classified cell images and verify that the system has correctly identified and categorized cells by type and confidence level.
+one_shot;0,8;6;Locate a cell that was initially misclassified and correct the classification, providing a reason for the correction.
+one_shot;0,8;6;Examine the dashboard to understand how the system's automatic classification results can be used to inform the doctor's analysis and reporting.
+one_shot;0,8;7;Identify the type of cell that was incorrectly classified and select the correct classification.
+one_shot;0,8;7;Compare the confidence level of a classified cell image and determine if it is accurate based on the image.
+one_shot;0,8;7;Review the table of test results and identify if the reference range is correct for a specific cell type.
+one_shot;0,8;7;"Validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide a reason why the original classification was wrong."
+one_shot;0,8;7;Analyze the explanation provided by the system for a misclassified cell and determine if it is sufficient to correct the classification.
+one_shot;0,8;7;Use the classified cell images to identify any patterns or characteristics that could improve the accuracy of the model.
+one_shot;0,8;7;Review the classified cells and determine if the system has missed any cells or misclassified them as artifacts.
+one_shot;0,8;7;Correct a misclassified cell image and provide a reason for the correction.
+one_shot;0,8;7;Determine if the system's classification of a cell is consistent with the image and explain any discrepancies.
+one_shot;0,7;1;"Validate the classification of a ciliated cell image and mark it as ""Correct"" or ""Incorrect""."
+one_shot;0,7;1;Identify a cell image that was misclassified as an epithelial cell and correct the classification to a more accurate type.
+one_shot;0,7;1;Review the dashboard to understand the reference range and classification of cell quantities for a specific nasal cytological preparation.
+one_shot;0,7;1;Examine the classified cell images with low confidence levels to determine if the original classification was correct or incorrect.
+one_shot;0,7;1;"Mark a cell image as ""Incorrect"" and provide a reason why the original classification was wrong."
+one_shot;0,7;1;Check if the system provides explanations for the original misclassifications and if so, review and correct them accordingly.
+one_shot;0,7;1;Compare the original classification of a cell image with the corrected classification to understand the changes made and the reasons behind them.
+one_shot;0,7;1;Use the validation/correction features to reconfigure the model and improve its accuracy in identifying and classifying cells.
+one_shot;0,7;10;Identify an image of a ciliated cell and evaluate whether the system's classification is accurate.
+one_shot;0,7;10;Review the table of results and compare the number of detected cells with the reference range.
+one_shot;0,7;10;Check if the system has correctly classified a metaplastic cell and, if not, correct the classification.
+one_shot;0,7;10;Browse through the images of classified cells and select a low-confidence image to review.
+one_shot;0,7;10;Validate the system's classification of a lymphocyte cell and provide a reason if the classification is incorrect.
+one_shot;0,7;10;Compare the system's classification of a mucus-producing cell with the actual image and correct any misclassifications.
+one_shot;0,7;3;Identify cells that were misclassified and correct their classifications, providing explanations for the corrections.
+one_shot;0,7;3;Review the results of a previously analyzed nasal cytological preparation and verify that the system has accurately classified the cells.
+one_shot;0,7;3;Evaluate the confidence level of the system's automatic classifications and identify any cells that were classified with low confidence.
+one_shot;0,7;3;Use the system to classify a new nasal cytological preparation and then review the results to ensure that the system has accurately identified and classified the cells.
+one_shot;0,7;3;Correct any misclassifications in the cell classification table and provide explanations for the corrections.
+one_shot;0,7;3;Compare the system's automatic classifications with your own expert knowledge and identify any discrepancies.
+one_shot;0,7;3;"Use the system to identify and classify cells from a nasal cytological preparation, and then validate the results by marking the classifications as ""Correct"" or ""Incorrect"" and providing reasons for any corrections."
+one_shot;0,7;4;Validate the classification of 5 randomly selected cells on the dashboard and check if the explanations provided for incorrect classifications are accurate.
+one_shot;0,7;4;Compare the number of detected cells in the table with the actual number of cells visible in the classified cell images and report any discrepancies.
+one_shot;0,7;4;"Identify a cell that was misclassified as ""ciliated"" and correct the misclassification, providing a clear explanation for the correction."
+one_shot;0,7;4;Review the confidence level of 3 classified cell images and determine if it accurately reflects the quality of the classification.
+one_shot;0,7;4;Use the validation and correction features to improve the model's accuracy by correcting 2 incorrect classifications and providing explanations for each correction.
+one_shot;0,7;4;Compare the test results table with the classified cell images and check if the reference range and classification of cell quantity are accurate.
+one_shot;0,7;4;Identify a cell that was correctly classified and explain why the automatic classification was accurate.
+one_shot;0,7;6;"Identify and correct the misclassification of at least 5 cells in the ""ciliated"" class on the ""classified-cells-wrong.png"" page."
+one_shot;0,7;6;"Compare the reference range for epithelial cells on the ""dashboard.png"" page with the actual count on the same page, and check if the system's classification is accurate."
+one_shot;0,7;6;"Review the confidence levels of the classified cell images on the ""dashboard.png"" page and identify the categories with the lowest confidence levels."
+one_shot;0,7;6;"Validate the accuracy of the system's classification for at least 3 cell types on the ""classified-cells-correct.png"" page, marking any incorrect classifications as ""Incorrect"" and providing a brief explanation for each."
+one_shot;0,7;6;"On the ""dashboard.png"" page, check if the system has correctly identified and classified any metaplastic cells, and if not, correct the misclassifications and provide a reason for the correction."
+one_shot;0,7;8;Identify and correct the misclassifications in class ‘‘ciliated’’ cells in the previously analyzed sample, providing explanations for the corrections.
+one_shot;0,7;8;Evaluate the accuracy of the system's classification of red blood cells and suggest corrections if necessary, explaining the reasons for each correction.
+one_shot;0,7;8;Review the test results table and verify that it accurately reflects the classification and quantity of detected cells, including any corrections made.
+one_shot;0,7;8;Examine the classified cell images with low confidence levels and assess whether the system's classifications are accurate, making corrections as needed with explanations.
+one_shot;0,7;8;Use the dashboard to navigate to the previously analyzed sample and re-evaluate the system's classifications, making any necessary corrections and providing explanations.
+one_shot;0,6;1;"Identify and correct the classification of a cell marked as ""ciliated"" in the wrong classification screenshot."
+one_shot;0,6;1;Review the dashboard to understand the reference range for the number of detected cells and explain why it is or is not useful for your work.
+one_shot;0,6;1;Compare the classified cell image with a high confidence level to an image with a low confidence level and describe how the confidence level affects your trust in the classification.
+one_shot;0,6;1;Use the system to validate the classification of 5 cells and provide explanations for any corrections made.
+one_shot;0,6;1;"Explain why the system's automatic classification of a cell as ""epithelial"" is or is not correct based on the provided image."
+one_shot;0,6;1;Identify the types of cells that are most commonly misclassified by the system and suggest reasons why this might be happening.
+one_shot;0,6;10;Identify a cell that was misclassified as 'ciliated' and correct the classification, providing a brief explanation for the correction.
+one_shot;0,6;10;Review the test results table and verify that the reference range for a specific cell type is accurately displayed.
+one_shot;0,6;10;Examine a cell image classified with low confidence and determine if the classification is correct or incorrect.
+one_shot;0,6;10;"Mark a cell classification as ""Incorrect"" and provide a reason for the correction, then select a new classification for the cell."
+one_shot;0,6;10;Compare the automatically identified cell types with the actual cell types in a nasal cytological preparation, and identify any discrepancies.
+one_shot;0,6;10;Use the classified cell images to understand the system's classification logic and identify any patterns or trends in the classifications.
+one_shot;0,6;10;Validate the system's automatic classification of a specific cell type (e.g., eosinophils) and determine if the classification is accurate or requires correction.
+one_shot;0,6;2;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+one_shot;0,6;2;Review the classified cell images and validate the confidence level assigned to each image.
+one_shot;0,6;2;Check the reference range for the number of detected cells and verify if it matches the expected values.
+one_shot;0,6;2;Browse through the classified cell images and try to understand how the system classified each cell.
+one_shot;0,6;2;Try to correct a cell classification by selecting a new class and providing a reason for the incorrect classification.
+one_shot;0,6;2;Use the dashboard to navigate through the different sections of the system and find the classified cell images.
+one_shot;0,6;2;Validate the correctness of a classification by marking it as “Correct” or “Incorrect” and providing a reason for any incorrect classification.
+one_shot;0,6;4;Identify and correct the classification of a cell that was misclassified as ciliated, providing a reason for the correction.
+one_shot;0,6;4;Review the table showing the types of cells detected and their quantities, and verify that the reference ranges are accurate.
+one_shot;0,6;4;Browse through the classified cell images, categorized by confidence level, and evaluate the quality of the images.
+one_shot;0,6;4;"Identify a cell that was classified as an artifact and mark it as ""Incorrect"", then select a new class and provide a reason for the correction."
+one_shot;0,6;4;Evaluate the explanations provided by the system for a cell that was misclassified, and indicate whether the explanation is sufficient or not.
+one_shot;0,6;4;Navigate through the dashboard and verify that the interface is clear and easy to use.
+one_shot;0,6;4;Review the classified cell images and verify that the cells are correctly classified and that the confidence levels are accurate.
+one_shot;0,6;4;Identify a cell that was misclassified and correct the classification, providing a reason for the correction, and then verify that the correction is reflected in the table showing the types of cells detected and their quantities.
+one_shot;0,6;6;Correct an incorrect classification of a ciliated cell and provide a brief explanation for the correction.
+one_shot;0,6;6;Review the dashboard to understand the overall accuracy of the system's cell classifications.
+one_shot;0,6;6;Identify a low-confidence classification of a cell and verify whether the classification is correct or incorrect.
+one_shot;0,6;6;Evaluate the system's ability to distinguish between different types of cells (e.g., epithelial cells vs. red blood cells) and provide feedback on any misclassifications.
+one_shot;0,6;6;"Use the system to validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide a reason for any corrections made."
+one_shot;0,6;6;Examine the classified cell images categorized by confidence level and provide feedback on the system's performance.
+one_shot;0,6;6;Compare the system's classification of a cell with a known reference range and provide feedback on any discrepancies.
+one_shot;0,6;7;"Identify and correct the misclassification of a cell that is marked as ""Incorrect"" in the classified cells table."
+one_shot;0,6;7;Review the confidence level of a cell image and explain why it is low/medium/high.
+one_shot;0,6;7;"Use the dashboard to navigate to a specific page and locate a cell image that was previously marked as ""Incorrect""."
+one_shot;0,6;7;Select a cell image and provide a reason for why the system's original classification was incorrect.
+one_shot;0,6;7;"Use the system's correction feature to re-classify a cell that was previously marked as ""Incorrect"" and explain the reasoning behind the new classification."
+one_shot;0,6;7;Compare the system's original classification of a cell to the reference range and explain any discrepancies.
+one_shot;0,6;7;"Use the system's validation feature to mark a cell image as ""Correct"" and provide a reason for why it is correct."
+one_shot;0,6;8;Identify a cell that was misclassified by the system and correct its classification, providing a brief explanation for the correction.
+one_shot;0,6;8;Review the table on the dashboard to ensure that the system's automatic classification results are accurate for a particular sample.
+one_shot;0,6;8;Evaluate the confidence level of the system's classification for a specific cell type and determine if it is acceptable for diagnostic purposes.
+one_shot;0,6;8;Correct a cell classification that you believe is incorrect, providing a clear reason for the correction and ensuring that the new classification is accurate.
+one_shot;0,6;8;Assess the system's ability to identify and classify a particular cell type, such as metaplastic cells, and determine if the results are consistent with your expertise.
+one_shot;0,6;8;Review the classified cell images to ensure that the system's automatic classification results are consistent with the images and your medical expertise.
+one_shot;0,6;9;Identify a cell that was incorrectly classified and provide a reason for the incorrect classification.
+one_shot;0,6;9;Review the test results table and identify any discrepancies between the automatically classified cells and your expected results.
+one_shot;0,6;9;Browse through the classified cell images and identify any cells that you would like to correct or provide additional context for.
+one_shot;0,6;9;Use the validation and correction feature to correct the classification of a cell and provide a reason for the correction.
+one_shot;0,6;9;Navigate to the dashboard and identify the main features and functionalities of the system.
+one_shot;0,6;9;Use the classified cells interface to select a cell and provide feedback on its classification, including any corrections or additional context.
+one_shot;0,5;1;Identify cells that were misclassified by the system and correct their classification, providing a brief explanation for the correction.
+one_shot;0,5;1;Review the table of test results and verify that the number of detected cells and the reference range are accurate.
+one_shot;0,5;1;Examine the classified cell images and ensure that they match the correct classification provided by the system.
+one_shot;0,5;1;Evaluate the confidence level of the system's classification for a specific cell type and determine if it is accurate.
+one_shot;0,5;1;Correct the classification of a cell that was incorrectly identified by the system, providing a reason for the correction.
+one_shot;0,5;1;Review the explanations provided by the system for a specific cell classification and determine if they are accurate.
+one_shot;0,5;1;Validate the system's ability to identify artifacts and correct any misclassifications.
+one_shot;0,5;10;Identify and correct the misclassification of a ciliated cell, providing a clear explanation for the correction.
+one_shot;0,5;10;Review the confidence level of a classified mast cell image and determine if it is accurate.
+one_shot;0,5;10;"Validate the automatic classification of a lymphocyte cell, marking it as ""Correct"" or ""Incorrect"" and providing a reason for the decision."
+one_shot;0,5;10;Analyze the test results table and identify any discrepancies between the system's classification and the reference range.
+one_shot;0,5;10;Examine a classified cell image with a low confidence level and determine if the system's classification is accurate.
+one_shot;0,5;10;Review the dashboard and identify the types of cells that are most commonly misclassified by the system.
+one_shot;0,5;10;Correct the misclassification of a metaplastic cell, providing a clear explanation for the correction.
+one_shot;0,5;10;Determine if the system's classification of a mucus-producing cell is accurate and provide a reason for the decision.
+one_shot;0,5;10;"Validate the automatic classification of a neutrophil cell, marking it as ""Correct"" or ""Incorrect"" and providing a reason for the decision."
+one_shot;0,5;10;Identify and correct the misclassification of an epithelial cell, providing a clear explanation for the correction.
+one_shot;0,5;6;Identify a cell that was misclassified by the system and correct the classification, providing a brief explanation for the correction.
+one_shot;0,5;6;Review the table displaying test results and verify that the number of detected cells matches the actual count in the image.
+one_shot;0,5;6;Browse through the classified cell images and select a cell with a low confidence level. Evaluate the system's classification and consider potential corrections.
+one_shot;0,5;6;"Use the validation feature to mark a correctly classified cell as ""Correct"" and provide a brief comment on the system's accuracy."
+one_shot;0,5;6;Locate a cell that was incorrectly classified and use the correction feature to change the classification. Provide a clear reason for the correction.
+one_shot;0,5;6;Examine the dashboard and identify the reference range for a specific cell type. Evaluate whether the reference range is accurate and relevant.
+one_shot;0,5;6;Select a cell image and assess the system's classification. If the classification is incorrect, use the correction feature to change it and provide a justification for the correction.
+one_shot;0,5;7;Identify cells that were misclassified by the system and correct their classifications, providing explanations for the corrections.
+one_shot;0,5;7;Review the table of test results to ensure that the number of detected cells and their classification are accurate.
+one_shot;0,5;7;Examine the classified cell images to verify that they match their corresponding classifications.
+one_shot;0,5;7;Validate the system's automatic classification of a specific cell type (e.g., ciliated cells) and correct any misclassifications, providing explanations for the corrections.
+one_shot;0,5;7;Use the dashboard to access the classified cell images and review the confidence level of the system's classifications.
+one_shot;0,5;7;Correct the system's classification of a cell that was incorrectly identified as an artifact, providing a reason for the correction.
+one_shot;0,5;8;"Identify cells marked as ""Incorrect"" in the classified cells page and provide explanations for the original classification error."
+one_shot;0,5;8;Review the table showing test results and identify any discrepancies between the automatically detected cell types and the expected reference range.
+one_shot;0,5;8;Navigate to the classified cell images page and verify that the images are correctly categorized by confidence level (low, medium, high).
+one_shot;0,5;8;"Select a cell image with a low confidence level and validate its classification by selecting ""Correct"" or ""Incorrect"". If incorrect, provide a reason for the classification error and select a new class."
+one_shot;0,5;8;Compare the automatically detected cell types with the expected reference range in the table showing test results and identify any misclassifications.
+one_shot;0,5;8;Use the dashboard to access various options and buttons and determine if they are easily accessible and intuitive to use.
+one_shot;0,5;9;Identify and correct a cell classified as an artifact, providing a brief explanation for the correction.
+one_shot;0,5;9;"Review the classification of a group of cells and mark any classifications as ""Incorrect"" if they do not match the actual cell types."
+one_shot;0,5;9;Analyze the confidence level of a cell classification and determine if it is accurate based on the image.
+one_shot;0,5;9;Validate the automatic classification of a cell as a red blood cell and provide a reason if it is incorrect.
+one_shot;0,5;9;Review the reference range for a specific cell type and determine if the number of detected cells falls within the expected range.
+one_shot;0,5;9;Correct a misclassified cell and explain why the original classification was incorrect.
+one_shot;0,5;9;Evaluate the accuracy of the system's classification of a mucus-producing cell and provide feedback if necessary.
+one_shot;0,5;9;Identify and correct a cell that was not classified by the system and provide a reason for the correction.
+one_shot;0,5;9;Review the classified cell images and determine if the confidence level is accurate based on the image quality.
+one_shot;0,4;1;Identify and correct the misclassifications of cells in class 'ciliated' and provide explanations for the corrections.
+one_shot;0,4;1;Review the table displaying test results and identify any discrepancies between the automatic classifications and your expertise.
+one_shot;0,4;1;Examine the classified cell images and determine whether the confidence levels (low, medium, high) accurately reflect the quality of the classifications.
+one_shot;0,4;1;Validate the automatic classification of a cell as 'epithelial' and provide reasons for your decision.
+one_shot;0,4;1;Use the validation/correction features to mark a classification as 'Incorrect' and select a new class for the cell.
+one_shot;0,4;1;Compare the reference range for a specific cell type and determine whether it is accurate based on your expertise.
+one_shot;0,4;1;Identify and explain the reasons for any discrepancies between the automatic classifications and your expertise.
+one_shot;0,4;1;Use the system to re-classify a cell that was initially misclassified and provide explanations for the correction.
+one_shot;0,4;10;Identify and correct the misclassification of a ciliated cell in the image, providing a brief explanation for the correction.
+one_shot;0,4;10;Review the test results table and confirm that the reference range for epithelial cells is accurate.
+one_shot;0,4;10;Browse through the classified cell images and select a cell with a low confidence level, then provide a reason why the classification is incorrect.
+one_shot;0,4;10;"Validate the automatic classification of a lymphocyte cell as ""Correct"" or ""Incorrect"", and if incorrect, correct it and explain the reason for the correction."
+one_shot;0,4;10;Use the system to identify and count the number of metaplastic cells in a nasal cytological preparation image.
+one_shot;0,4;10;Review the dashboard to ensure that the system is displaying the correct number of detected cells and their corresponding classifications.
+one_shot;0,4;10;Select a cell image with a medium confidence level and provide feedback on why the classification is accurate or inaccurate.
+one_shot;0,4;2;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+one_shot;0,4;2;Review the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity. What information is missing that would be helpful for your work?
+one_shot;0,4;2;Compare the classified cell images with the original images. How does the confidence level (low, medium, high) affect your confidence in the classification?
+one_shot;0,4;2;Go to the dashboard and identify the most common types of cells detected in the last 5 analyses. What insights can be gained from this information?
+one_shot;0,4;2;Select a cell image with a low confidence level and try to classify it manually. What are the challenges in classifying cells with low confidence levels?
+one_shot;0,4;2;Review the explanations provided for incorrect classifications. Are they clear and helpful? How can they be improved?
+one_shot;0,4;3;Identify cells that have been misclassified by the system and correct the classification, providing a reason for the correction.
+one_shot;0,4;3;Review the table on the dashboard to understand how the system is presenting the test results, and verify that the information is accurate and easy to understand.
+one_shot;0,4;3;Browse through the classified cell images and verify that they are correctly categorized by confidence level (low, medium, high).
+one_shot;0,4;3;"Select a cell image that has been marked as ""Incorrect"" and correct the classification, providing a reason for the correction."
+one_shot;0,4;3;"Use the system to validate the automatic classification of a cell, marking it as ""Correct"" or ""Incorrect"" and providing a reason for the decision."
+one_shot;0,4;3;Explore the dashboard to identify how the system is presenting the reference range for each cell type, and verify that it is clear and easy to understand.
+one_shot;0,4;4;"Identify and correct a cell that was misclassified as a ""ciliated"" cell, providing a reason for the correction."
+one_shot;0,4;4;Review the table displaying cell types, numbers, reference ranges, and quantity classifications, and ensure that the information is accurate and easy to understand.
+one_shot;0,4;4;Navigate to the classified cell images and view the images categorized by confidence level, ensuring that the images are correctly displayed and easily accessible.
+one_shot;0,4;4;"Mark a classification as ""Incorrect"" and correct it by selecting a new class, providing a reason for the correction."
+one_shot;0,4;6;Identify and correct the misclassification of a ciliated cell in the image, providing a brief explanation for the correction.
+one_shot;0,4;6;Review the table showing the type of cell, number of detected cells, reference range, and classification of their quantity, and verify that the information is accurate for a sample nasal cytological preparation.
+one_shot;0,4;6;Browse through the classified cell images, categorized by confidence level, and select an image with a low confidence level to review and potentially correct the classification.
+one_shot;0,4;6;"Validate the automatic classification of a group of epithelial cells, marking them as ""Correct"" or ""Incorrect"" and providing reasons for any corrections made."
+one_shot;0,4;6;Explore the dashboard to understand the overall performance of the system in identifying and classifying cells from a nasal cytological preparation, and identify any potential issues or areas for improvement.
+one_shot;0,4;7;"Identify cells that have been misclassified as ""ciliated"" and correct the misclassifications, providing explanations for the corrections."
+one_shot;0,4;7;Review the test results table and verify that the reference ranges for each cell type are accurate.
+one_shot;0,4;7;Browse through the classified cell images and evaluate the confidence levels assigned to each image.
+one_shot;0,4;7;"Validate the classification of a specific cell image, marking it as ""Correct"" or ""Incorrect,"" and provide reasons for any corrections."
+one_shot;0,4;7;Compare the automatic classifications provided by the system with your own expertise and correct any discrepancies, providing explanations for the corrections.
+one_shot;0,4;7;Use the dashboard to navigate through the results and identify any patterns or trends in the cell classifications.
+one_shot;0,4;7;Evaluate the system's ability to detect rare or unusual cell types and correct any misclassifications.
+one_shot;0,4;9;Identify and correct misclassifications in class ‘‘ciliated’’ and provide explanations for the corrections.
+one_shot;0,4;9;Review the test results table and verify that the reference range and classification of cell quantity are accurate.
+one_shot;0,4;9;Browse through the classified cell images, categorized by confidence level, and validate the classifications provided by the system.
+one_shot;0,4;9;Select a cell image and mark the classification as “Incorrect”, then correct it by selecting a new class and providing reasons for the correction.
+one_shot;0,4;9;Use the validation and correction features to reconfigure the model's classifications for a specific cell type.
+one_shot;0,4;9;Compare the original and corrected classifications for a set of cells and assess the impact of corrections on the model's performance.
+one_shot;0,3;10;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+one_shot;0,3;10;Review the test results table and verify that the number of detected cells and reference range are accurate for a given nasal cytological preparation.
+one_shot;0,3;10;Examine the classified cell images and categorize them by confidence level (low, medium, high). Provide feedback on the accuracy of the confidence levels.
+one_shot;0,3;10;Validate the automatic classification of a specific cell type (e.g., eosinophils) and correct any incorrect classifications, providing reasons for the correction.
+one_shot;0,3;10;Use the system to analyze a new nasal cytological preparation and evaluate the accuracy of the automatic cell identification and classification.
+one_shot;0,3;10;Compare the system's automatic classification of a cell type with your own expertise and provide feedback on any discrepancies.
+one_shot;0,3;10;Use the system to identify and correct any errors in the classification of a specific cell type (e.g., artifacts) and evaluate the impact on the overall accuracy of the model.
+one_shot;0,3;3;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+one_shot;0,3;3;Review the table on the dashboard to ensure that the number of detected cells and their classification are accurate.
+one_shot;0,3;3;Examine the classified cell images and verify that they are correctly categorized by confidence level.
+one_shot;0,3;3;Mark a cell classification as “Incorrect” and provide a reason for the correction.
+one_shot;0,3;3;Use the system to reconfigure the model by correcting multiple misclassifications and providing explanations for each correction.
+one_shot;0,3;3;Compare the reference range for a specific cell type with the number of detected cells in the table on the dashboard.
+one_shot;0,3;5;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+one_shot;0,3;5;Review the test results table and verify that the number of detected cells and reference range are accurate.
+one_shot;0,3;5;Examine the classified cell images and evaluate the confidence level (low, medium, high) for each image.
+one_shot;0,3;5;Validate the classification of a cell as “Correct” or “Incorrect” and provide reasons why the original classification was wrong.
+one_shot;0,3;5;Correct the classification of a cell by selecting a new class and providing explanations for the correction.
+one_shot;0,3;5;Use the dashboard to navigate to a specific section of the system and verify that the interface is intuitive and easy to use.
+one_shot;0,3;6;Identify and correct the misclassification of a cell in the image, providing a clear explanation for the correction.
+one_shot;0,3;6;Review the test results table and verify that the reference range is accurate for the detected cell types.
+one_shot;0,3;6;Browse through the classified cell images and select an image with a low confidence level to review its classification.
+one_shot;0,3;6;"Validate the automatic classification of a cell as ""Correct"" or ""Incorrect"" and provide a reason for the classification."
+one_shot;0,3;6;Use the system to correct the classification of a cell and provide a clear explanation for the correction.
+one_shot;0,3;6;Review the dashboard to ensure that the system is displaying accurate information about the detected cell types and their quantities.
+one_shot;0,3;9;Identify a cell that was misclassified and correct the classification, providing a brief explanation for the correction.
+one_shot;0,3;9;Review the test results table and verify that the reference range is correctly displayed for each cell type.
+one_shot;0,3;9;Examine the classified cell images and confirm that the confidence level indicator is correctly displayed for each image.
+one_shot;0,3;9;"Use the validation feature to mark a classification as ""Incorrect"" and correct it by selecting a new class, providing a brief explanation for the correction."
+one_shot;0,3;9;Browse the dashboard and identify the main sections and features, including the classified cell images and test results.
+one_shot;0,3;9;Use the system to classify a new cell image and verify that the classification is correctly displayed in the test results table.
+one_shot;0,2;1;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+one_shot;0,2;1;Review the table showing the type of cell, the number of detected cells, the reference range, and the classification of their quantity. What do you think about the accuracy of the system's automatic classifications?
+one_shot;0,2;1;Browse through the classified cell images, categorized by confidence level (low, medium, high). How do you think the confidence level affects the accuracy of the classifications?
+one_shot;0,2;1;Mark a cell classification as “Incorrect” and provide a reason why the original classification was wrong. How does the system respond to your correction?
+one_shot;0,2;1;Compare the system's automatic classifications with your own expertise. Are there any discrepancies? If so, how would you correct them?
+one_shot;0,2;1;Use the validation and correction features to reconfigure the model. How do you think the model will improve after your corrections?
+one_shot;0,2;2;Identify cells that have been misclassified as 'ciliated' and correct the misclassifications, providing explanations for the corrections.
+one_shot;0,2;2;Review the table showing the type of cell, number of detected cells, reference range, and classification of quantity, and verify that it accurately reflects the cell classification.
+one_shot;0,2;2;Examine the classified cell images, categorized by confidence level, and assess whether they accurately represent the corresponding cell types.
+one_shot;0,2;2;"Mark a cell classification as ""Incorrect"" and correct it by selecting a new class, providing reasons why the original classification was wrong."
+one_shot;0,2;2;Use the system to analyze a new nasal cytological preparation, and evaluate the accuracy of the automatic cell identification and classification.
+one_shot;0,2;3;Identify a cell that was misclassified by the system and correct the classification, providing a reason for the correction.
+one_shot;0,2;3;Review the table of test results and verify that the number of detected cells and the reference range are accurate.
+one_shot;0,2;3;Examine the classified cell images and determine if the confidence level (low, medium, high) is appropriate for each image.
+one_shot;0,2;3;"Select a cell image and mark the system's classification as ""Incorrect"", then correct the classification and provide a reason for the correction."
+one_shot;0,2;3;Use the dashboard to navigate to a specific page and verify that the test results are displayed correctly.
+one_shot;0,2;3;Identify a cell that was correctly classified by the system and verify that the classification is accurate.
+one_shot;0,2;5;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+one_shot;0,2;5;Review the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity, and verify that it is accurate.
+one_shot;0,2;5;Browse through the classified cell images, categorized by confidence level (low, medium, high), and assess their quality.
+one_shot;0,2;5;Select a cell image that you believe was incorrectly classified and correct the classification, providing a reason for the correction.
+one_shot;0,2;5;Use the validation and correction features to mark a classification as “Correct” or “Incorrect” and, if incorrect, correct it by selecting a new class and providing a reason for the correction.
+one_shot;0,2;5;Evaluate the dashboard to ensure that it provides the necessary information for reviewing and correcting the automatic classifications.
+one_shot;0,2;6;"Identify a cell classified as ""ciliated"" and explain why the original classification was incorrect."
+one_shot;0,2;6;Review the table showing the type of cell, number of detected cells, reference range, and classification of their quantity. Are there any discrepancies or inconsistencies?
+one_shot;0,2;6;Browse through the classified cell images, categorized by confidence level (low, medium, high). How do the images support or contradict the automatic classifications?
+one_shot;0,2;6;"Select a cell classified as ""incorrect"" and correct the classification. Provide a brief explanation for the correction."
+one_shot;0,2;6;Compare the original classification with the corrected one. How does the system's performance improve after the correction?
+one_shot;0,2;6;Explore the dashboard to understand the overall performance of the system. Are there any patterns or trends in the classifications that could be improved?
+one_shot;0,2;8;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+one_shot;0,2;8;Review the table showing test results and verify that the number of detected cells matches the actual count.
+one_shot;0,2;8;Examine the classified cell images categorized by confidence level and assess the accuracy of the classifications.
+one_shot;0,2;8;Use the validation and correction features to mark a classification as “Incorrect” and provide a reason for the correction.
+one_shot;0,2;8;Compare the original classification with the corrected classification and verify that the system updates the classification accordingly.
+one_shot;0,2;8;Navigate to the dashboard and verify that the system displays the correct number of cells and their classifications.
+one_shot;0,1;1;Identify and correct the misclassification of a ciliated cell in the image, providing a brief explanation for the correction.
+one_shot;0,1;1;Review the table displaying test results and verify that the number of detected cells matches the actual count.
+one_shot;0,1;1;Browse through the classified cell images, focusing on those with a low confidence level, and assess their accuracy.
+one_shot;0,1;1;"Validate the classification of a red blood cell as ""Correct"" or ""Incorrect"" and provide a reason for your decision."
+one_shot;0,1;1;Explore the dashboard to understand the overall performance of the system and identify areas for improvement.
+one_shot;0,1;1;Correct the misclassification of a metaplastic cell and provide a justification for the correction.
+one_shot;0,1;1;Assess the accuracy of the system's classification of epithelial cells and provide feedback on any discrepancies.
+one_shot;0,1;1;Review the reference range for a specific cell type and verify that it is up-to-date and accurate.
+one_shot;0,1;1;Identify and correct the misclassification of a mucus-producing cell, providing a brief explanation for the correction.
+one_shot;0,1;1;Evaluate the system's ability to detect and classify artifacts and provide feedback on its performance.
+one_shot;0,1;10;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+one_shot;0,1;10;Review the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity, and verify that it is accurate.
+one_shot;0,1;10;Browse through the classified cell images, categorized by confidence level (low, medium, high), and assess their quality.
+one_shot;0,1;10;Mark a classification of cells as “Correct” or “Incorrect” and, if incorrect, correct it by selecting a new class and providing reasons why the original classification was wrong.
+one_shot;0,1;10;Use the system's features to validate and correct explanations in order to reconfigure the model, and evaluate the effectiveness of the corrections.
+one_shot;0,1;2;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+one_shot;0,1;2;Review the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity. What information can be derived from this table?
+one_shot;0,1;2;Browse through the classified cell images, categorized by confidence level (low, medium, high). How do the images correspond to the classifications provided by the system?
+one_shot;0,1;2;Mark a classification of cells as “Correct” or “Incorrect” and, if incorrect, correct it by selecting a new class and providing reasons why the original classification was wrong. How does the system respond to corrections?
+one_shot;0,1;2;Compare the original classification with the corrected one. What implications does this have for the reconfiguration of the model?
+one_shot;0,1;3;Identify cells that have been misclassified and correct the classification, providing a reason for the correction.
+one_shot;0,1;3;Review the table of test results to ensure that the number of detected cells and their classification are accurate.
+one_shot;0,1;3;Examine the classified cell images and verify that they are correctly categorized by confidence level.
+one_shot;0,1;3;"Mark a cell classification as ""Incorrect"" and correct it, providing a reason for the correction."
+one_shot;0,1;3;Use the dashboard to compare the automatic classifications with your own expertise and identify areas where the model may need reconfiguration.
+one_shot;0,1;3;Review the classified cell images and identify any patterns or trends in the misclassifications that may indicate a need for model improvement.
+one_shot;0,1;5;Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
+one_shot;0,1;5;Review the table on the dashboard to understand the types of cells detected and their quantities.
+one_shot;0,1;5;Examine the classified cell images and determine if the confidence level is accurate for each image.
+one_shot;0,1;5;Validate the classification of a cell as “Correct” or “Incorrect” and provide a reason for the correction.
+one_shot;0,1;5;Use the system to correct a misclassified cell and explain why the original classification was wrong.
+one_shot;0,1;5;Compare the reference range for a specific cell type with the number of detected cells in the table on the dashboard.
+one_shot;0,1;6;Identify a cell that was misclassified as an epithelial cell and correct the classification, providing a reason for the correction.
+one_shot;0,1;6;Review the table on the dashboard and verify that the number of detected ciliated cells is within the reference range.
+one_shot;0,1;6;Examine a cell image classified with low confidence and determine if the classification is correct or incorrect. If incorrect, correct the classification and provide a reason for the correction.
+one_shot;0,1;6;"Compare the classification of a cell marked as ""Incorrect"" with the original classification provided by the system and determine if the correction is accurate."
+one_shot;0,1;6;Browse through the classified cell images and identify a cell that was correctly classified by the system. Verify that the classification is accurate and that the confidence level is appropriate.
+one_shot;0,1;6;"Validate the classification of a cell marked as ""Correct"" and determine if the classification is accurate. If not, correct the classification and provide a reason for the correction."
+one_shot;0,1;7;"Identify and correct the misclassifications of cells in the ""ciliated"" class, providing explanations for the corrections."
+one_shot;0,1;7;Review the test results table and verify that the number of detected cells and reference ranges are accurate.
+one_shot;0,1;7;Examine the classified cell images and determine if the confidence levels are correctly assigned.
+one_shot;0,1;7;"Validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide reasons for the correction if necessary."
+one_shot;0,1;7;Use the system to reconfigure the model by correcting misclassifications and providing explanations, and then verify that the reconfigured model provides accurate classifications.
+one_shot;0,1;8;Identify cells that have been misclassified and correct the classification, providing a brief explanation for the correction.
+one_shot;0,1;8;Review the table on the dashboard to ensure that the number of detected cells and their classification are accurate.
+one_shot;0,1;8;Examine the classified cell images and verify that they are correctly categorized by confidence level.
+one_shot;0,1;8;"Mark a cell as ""Incorrect"" and correct its classification, providing a reason for the correction."
+one_shot;0,1;8;Use the system to validate the automatic classification of a cell, and if necessary, correct it and provide an explanation for the correction.
+one_shot;0,1;9;Identify and correct a cell that was misclassified as a ciliated cell, providing a clear explanation for the correction.
+one_shot;0,1;9;Review the test results table and verify that the number of detected cells for each type is accurate.
+one_shot;0,1;9;Examine a classified cell image with low confidence and determine whether it should be reclassified.
+one_shot;0,1;9;"Mark a classification as ""Incorrect"" and provide a reason for the correction, then reclassify the cell."
+one_shot;0,1;9;Compare the reference range for a specific cell type with the actual number of detected cells and determine if it is within the expected range.
+one_shot;0,1;9;Use the classified cell images to identify any patterns or trends in the data that may indicate a need for model reconfiguration.
+one_shot;0;1;Identify cells that have been misclassified and correct the classification, providing a reason for the correction.
+one_shot;0;1;Review the table of test results to ensure that the number of detected cells and their classification are accurate.
+one_shot;0;1;Examine the classified cell images and verify that they are correctly categorized by confidence level.
+one_shot;0;1;"Mark a cell classification as ""Incorrect"" and correct it, providing a reason for the correction."
+one_shot;0;1;Use the dashboard to compare the automatic classifications with your own expertise and identify any discrepancies.
+one_shot;0;1;Review the explanations provided for incorrect classifications and determine if they are accurate.
+one_shot;0;1;Correct a misclassified cell and explain why the original classification was incorrect.
+one_shot;0;10;Identify and correct the classification of a cell that was misclassified as a ciliated cell, and provide a reason for the correction.
+one_shot;0;10;Review the table on the dashboard and identify the type of cell that is most frequently misclassified by the system.
+one_shot;0;10;Examine the classified cell images and determine which category (low, medium, high) has the most accurate classifications.
+one_shot;0;10;"Validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide a reason for the validation."
+one_shot;0;10;Correct the classification of a cell that was misclassified and explain why the original classification was incorrect.
+one_shot;0;10;Use the dashboard to identify the reference range for a specific type of cell and compare it to the number of detected cells.
+one_shot;0;2;Identify and correct the classification of a cell that was misclassified as a ciliated cell, and provide a reason for the correction.
+one_shot;0;2;Review the table on the dashboard and identify the type of cell that is most frequently misclassified by the system.
+one_shot;0;2;Examine the classified cell images and determine which category (low, medium, high) has the most accurate classifications.
+one_shot;0;2;"Validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide a reason for the validation."
+one_shot;0;2;Correct the classification of a cell that was misclassified and explain why the original classification was incorrect.
+one_shot;0;2;Use the dashboard to identify the reference range for a specific type of cell and compare it to the number of detected cells.
+one_shot;0;3;Identify and correct the classification of a cell that was misclassified as a ciliated cell, and provide a reason for the correction.
+one_shot;0;3;Review the table on the dashboard and identify the type of cell that is most frequently misclassified by the system.
+one_shot;0;3;Examine the classified cell images and determine which category (low, medium, high) has the most accurate classifications.
+one_shot;0;3;"Validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide a reason for the validation."
+one_shot;0;3;Correct the classification of a cell that was misclassified and explain why the original classification was incorrect.
+one_shot;0;3;Use the dashboard to identify the reference range for a specific type of cell and compare it to the number of detected cells.
+one_shot;0;4;Identify and correct the classification of a cell that was misclassified as a ciliated cell, and provide a reason for the correction.
+one_shot;0;4;Review the table on the dashboard and identify the type of cell that is most frequently misclassified by the system.
+one_shot;0;4;Examine the classified cell images and determine which category (low, medium, high) has the most accurate classifications.
+one_shot;0;4;"Validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide a reason for the validation."
+one_shot;0;4;Correct the classification of a cell that was misclassified and explain why the original classification was incorrect.
+one_shot;0;4;Use the dashboard to identify the reference range for a specific type of cell and compare it to the number of detected cells.
+one_shot;0;5;Identify and correct the classification of a cell that was misclassified as a ciliated cell, and provide a reason for the correction.
+one_shot;0;5;Review the table on the dashboard and identify the type of cell that is most frequently misclassified by the system.
+one_shot;0;5;Examine the classified cell images and determine which category (low, medium, high) has the most accurate classifications.
+one_shot;0;5;"Validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide a reason for the validation."
+one_shot;0;5;Correct the classification of a cell that was misclassified and explain why the original classification was incorrect.
+one_shot;0;5;Use the dashboard to identify the reference range for a specific type of cell and compare it to the number of detected cells.
+one_shot;0;6;Identify and correct the classification of a cell that was misclassified as a ciliated cell, and provide a reason for the correction.
+one_shot;0;6;Review the table on the dashboard and identify the type of cell that is most frequently misclassified by the system.
+one_shot;0;6;Examine the classified cell images and determine which category (low, medium, high) has the most accurate classifications.
+one_shot;0;6;"Validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide a reason for the validation."
+one_shot;0;6;Correct the classification of a cell that was misclassified and explain why the original classification was incorrect.
+one_shot;0;6;Use the dashboard to identify the reference range for a specific type of cell and compare it to the number of detected cells.
+one_shot;0;7;Identify and correct the classification of a cell that was misclassified as a ciliated cell, and provide a reason for the correction.
+one_shot;0;7;Review the table on the dashboard and identify the type of cell that is most frequently misclassified by the system.
+one_shot;0;7;Examine the classified cell images and determine which category (low, medium, high) has the most accurate classifications.
+one_shot;0;7;"Validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide a reason for the validation."
+one_shot;0;7;Correct the classification of a cell that was misclassified and explain why the original classification was incorrect.
+one_shot;0;7;Use the dashboard to identify the reference range for a specific type of cell and compare it to the number of detected cells.
+one_shot;0;8;Identify and correct the classification of a cell that was misclassified as a ciliated cell, and provide a reason for the correction.
+one_shot;0;8;Review the table on the dashboard and identify the type of cell that is most frequently misclassified by the system.
+one_shot;0;8;Examine the classified cell images and determine which category (low, medium, high) has the most accurate classifications.
+one_shot;0;8;"Validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide a reason for the validation."
+one_shot;0;8;Correct the classification of a cell that was misclassified and explain why the original classification was incorrect.
+one_shot;0;8;Use the dashboard to identify the reference range for a specific type of cell and compare it to the number of detected cells.
+one_shot;0;9;Identify and correct the classification of a cell that was misclassified as a ciliated cell, and provide a reason for the correction.
+one_shot;0;9;Review the table on the dashboard and identify the type of cell that is most frequently misclassified by the system.
+one_shot;0;9;Examine the classified cell images and determine which category (low, medium, high) has the most accurate classifications.
+one_shot;0;9;"Validate the classification of a cell as ""Correct"" or ""Incorrect"" and provide a reason for the validation."
+one_shot;0;9;Correct the classification of a cell that was misclassified and explain why the original classification was incorrect.
+one_shot;0;9;Use the dashboard to identify the reference range for a specific type of cell and compare it to the number of detected cells.
+zero_shot;1;1;Open the application and navigate to the section where you can view the classified cells. Identify the image where a cell is incorrectly classified.
+zero_shot;1;1;Choose an image of a cell that you believe was misclassified by the system. Take a few moments to verify the classification.
+zero_shot;1;1;Review the explanations provided for each cell type in the table. Which cell type do you believe was misclassified?
+zero_shot;1;1;"In the table, mark the cell type as ""Incorrect"" to indicate that you think the system made a mistake."
+zero_shot;1;1;"On the image corresponding to the cell you just indicated as ""Incorrect"", select a new classification and provide a brief reason why the original classification was incorrect."
+zero_shot;1;1;Verify that the system updates the classification table accordingly, and that the new classification is reflected in the cell image display.
+zero_shot;1;1;Repeat the previous task for a few more cells to ensure the system accepts your corrections and updates the classification table accordingly.
+zero_shot;1;3;The system displays classifications for various cells in a nasal cytological preparation. Review these classifications to identify any inaccuracies.
+zero_shot;1;3;"You have been presented with an image where the classification was wrong. Mark this classification as ""Incorrect"" and provide a reason why the original classification was incorrect."
+zero_shot;1;3;Evaluate the reference ranges provided for each cell type in the table displaying test results.
+zero_shot;1;3;Select a classified cell image and adjust its classification to a more accurate one. Justify the change made.
+zero_shot;1;3;Examine the confidence levels assigned to some cell classifications and explain how they influence the accuracy of the overall analysis.
+zero_shot;1;6;"As a rhinocytologist, I would like to review a classification of cells and mark it as ""Correct"" when it matches the actual classification."
+zero_shot;1;6;"As a rhinocytologist, I would like to review a classification of cells and mark it as ""Incorrect"" when it does not match the actual classification, and I would like to select a new class to correct the mistake."
+zero_shot;1;6;As a rhinocytologist, I would like to select a classified cell image and view its explanation, to determine the reasons behind the system's classification.
+zero_shot;1;6;As a rhinocytologist, I would like to review a classification of cells and provide a reason for why the original classification was incorrect.
+zero_shot;1;6;As a rhinocytologist, I would like to understand how my corrections will affect the reconfiguration of the model, and I would like to see the impact of my corrections on the system's future classifications.
+zero_shot;1;8;Imagine you've just reviewed the classified cells from a nasal cytological preparation and you found a cell that was misclassified. Describe how to correct the classification of this misclassified cell.
+zero_shot;1;8;"Try to correct a classification where the system has assigned a confidence level other than ""high"" to a cell that you are certain is a certain type of cell. Use the ""incorrect"" classification as your starting point and fill in the reasons why it is incorrect."
+zero_shot;1;8;Navigate to the page showing the classification of cells for a specific nasal cytological preparation. Find the reference range provided for the different types of cells and try to understand its meaning.
+zero_shot;0,9;1;The rhinocytologist has just uploaded a new nasal cytological preparation and needs to review the classifications for a few cells. How do they navigate to the section where they can validate and correct the classifications?
+zero_shot;0,9;1;A cell has been incorrectly classified as a ciliated cell. How does the rhinocytologist mark the classification as “Incorrect” and correct it to a different type?
+zero_shot;0,9;1;The rhinocytologist wants to verify why the system classified a certain cell as a mast cell. What information do they need to access to understand the reasoning behind the classification?
+zero_shot;0,9;1;How does the rhinocytologist filter the classified cell images to display only cells with a low confidence level?
+zero_shot;0,9;2;Load a sample image of a nasal cytological preparation into the system and verify that it is properly displayed.
+zero_shot;0,9;2;Identify and validate the automatic classification of cells in the sample image, including the type of cells, their number, and their reference range.
+zero_shot;0,9;2;View the classified cell images, categorized by confidence level, and analyze the images to determine if they accurately represent the identified cells.
+zero_shot;0,9;2;Correct the automatic classification of a cell that was incorrectly identified, providing a reason for the correction, and verify that the corrected classification is saved and displayed accurately.
+zero_shot;0,9;2;Review the test results table to ensure that it accurately reflects the validated and corrected classifications, including the type of cells, their number, and their reference range.
+zero_shot;0,9;5;"Click on a cell image that is marked as ""Incorrect"" and verify that you can correct its classification."
+zero_shot;0,9;5;"Review the classification provided for a cell and verify that you can mark it as ""Correct""."
+zero_shot;0,9;5;Explore the classified cell images and verify that you can view images categorized by confidence level.
+zero_shot;0,9;5;Click on a cell image and verify that you can view its classification details and reference range.
+zero_shot;0,9;5;Attempt to correct a cell classification and verify that you can provide a reason for the correction.
+zero_shot;0,8;1;As a rhinocytologist, you want to review the test results for a nasal cytological preparation. You are presented with a dashboard showing a summary of the test results. Please navigate to the section where you can view the detailed results for each cell type.
+zero_shot;0,8;1;You have identified a cell that was incorrectly classified. You want to correct the classification and provide a reason for the incorrect classification. Please select the cell image that was incorrectly classified and provide a reason in the designated field.
+zero_shot;0,8;1;You want to review the images of classified cells to ensure the accuracy of the automatic identification. Please navigate to the section where you can view the images of classified cells, and inspect the images to ensure they match the correct classification.
+zero_shot;0,8;3;Open the rhinocytogram analysis and examine the automatically identified cells.
+zero_shot;0,8;3;Identify a cell that was incorrectly classified and correct its classification by selecting a new class and providing a reason for the original classification error.
+zero_shot;0,8;3;Review the test results table and verify that the correct classification is reflected in the table.
+zero_shot;0,8;3;Compare the original classification of a cell with its corrected classification to ensure that the system updates the classification accurately.
+zero_shot;0,8;3;Examine the classified cell images, focusing on those with a low confidence level, and validate whether the system's classification is correct.
+zero_shot;0,8;3;Identify a cell that was correctly classified and validate whether the system's classification is accurate and whether the classification is reflected in the test results table.
+zero_shot;0,8;4;I am looking at a batch of cells that the system has automatically identified. I need to check if the system has correctly identified the type of cells in this batch. Can you please review the classifications for accuracy?
+zero_shot;0,8;4;I noticed an error in some of the cell classifications. Can you please demonstrate how to correct the classification of a specific cell, explaining why it was wrong?
+zero_shot;0,8;4;I have reviewed the batch of cells and marked some classifications as incorrect. Can you please explain how the system will reconfigure its model based on my corrections?
+zero_shot;0,8;7;Load a nasal cytological preparation and review the automatically classified cells.
+zero_shot;0,8;7;"Check the classification of a specific cell and mark it as ""Correct"" or ""Incorrect""."
+zero_shot;0,8;7;"If a cell is marked as ""Incorrect"", correct its classification and provide a reason for the correction."
+zero_shot;0,8;7;Review the test results table and verify that the number of detected cells and their classification are accurate.
+zero_shot;0,8;7;Browse through the classified cell images and select a few to review in detail.
+zero_shot;0,8;7;Try to identify which cells were correctly classified by the system.
+zero_shot;0,8;7;Attempt to correct a classification that the system got wrong, and provide a rationale for the change.
+zero_shot;0,8;8;"As a rhinocytologist, I would like to review the classification of a detected cell and mark it as ""Correct"" if accurate, and if incorrect, select a new classification and provide a reason for the mistake."
+zero_shot;0,8;8;I would like to view the images of cells that were classified with low confidence by the system, and provide feedback on their accuracy.
+zero_shot;0,8;8;On the dashboard, I would like to verify that the table displaying the test results is easy to understand and provides all the necessary information, including the type of cell, number of detected cells, reference range, and classification of their quantity.
+zero_shot;0,8;8;I would like to compare the classification of a cell by the system with my own expertise and correct any mistakes, providing reasons for my corrections.
+zero_shot;0,8;9;Load a sample case and review the initial classification provided by the system.
+zero_shot;0,8;9;Examine the classified cell images and assess the accuracy of the system's classification.
+zero_shot;0,8;9;Identify an incorrectly classified cell and correct the classification, providing a reason for the correction.
+zero_shot;0,8;9;Validate the corrected classification and verify that the system updates the classification accordingly.
+zero_shot;0,8;9;Use the dashboard to review the validation history and identify any patterns or inconsistencies in the system's performance.
+zero_shot;0,8;9;Attempt to correct a classification with low confidence and evaluate the effectiveness of the system's revised classification.
+zero_shot;0,7;2;You are reviewing a patient's nasal cytological preparation and you need to validate the classification of some cells. Please go through the list of classified cells and mark any that you consider incorrect.
+zero_shot;0,7;2;You have marked some cells as incorrect. Please correct their classification by selecting the correct class and providing a brief explanation for why the original classification was wrong.
+zero_shot;0,7;2;You are reviewing a patient's test results and you want to verify the number of detected cells for a specific type. Please check the table showing the type of cell, the number of detected cells, the reference range, and the classification of their quantity.
+zero_shot;0,7;3;As a specialist in rhinocytology, you want to validate the classification of a cell that was automatically identified by the system. How do you do it?
+zero_shot;0,7;3;You have reviewed the classification of a cell and found it to be incorrect. What steps would you take to correct the classification and provide a reason for the correction?
+zero_shot;0,7;3;You want to access the images of the cells that were classified with low confidence by the system. How do you do it?
+zero_shot;0,7;3;You want to review the results of a previous analysis to see if any classifications were corrected or validated by you. How do you do it?
+zero_shot;0,7;3;You want to re-classify a cell that you previously validated as correct but now believe was incorrect. What steps would you take to correct the classification and provide a reason for the correction?
+zero_shot;0,7;6;As a medical specialist, I would like to review the classifications provided by the system for a specific set of cells to ensure their accuracy.
+zero_shot;0,7;6;I want to verify that the system displays the correct classification for a particular cell type and number.
+zero_shot;0,7;6;Please demonstrate how to correct a classification that I believe is incorrect, providing reasons for the correction.
+zero_shot;0,7;6;As a rhinocytologist, I need to validate the explanations provided by the system for a set of classified cells to ensure their reliability.
+zero_shot;0,7;6;"I want to confirm that the system allows me to mark a classification as ""Correct"" or ""Incorrect"" and provide reasons for the correction."
+zero_shot;0,7;6;Please show me how to access the classified cell images and their corresponding explanations to facilitate my review and correction.
+zero_shot;0,7;6;As a medical specialist, I want to be able to reconfigure the model by validating and correcting explanations for a set of classified cells.
+zero_shot;0,7;7;"As a specialist in rhinocytology, I would like to validate the classification of a cell by marking it as ""Incorrect"" and provide a reason for the incorrect classification."
+zero_shot;0,7;7;I would like to navigate to the dashboard and view the table showing the type of cell, the number of detected cells, the reference range, and the classification of their quantity.
+zero_shot;0,7;7;"I would like to classify a cell as ""Incorrect"" and correct it by selecting a new class, and then provide a reason for the original classification being wrong."
+zero_shot;0,7;7;As a specialist in rhinocytology, I would like to view the classified cell images categorized by confidence level (low, medium, high) and select a cell for validation and correction.
+zero_shot;0,7;7;I would like to review the explanations provided by the system for a specific classification and determine whether they are accurate or not.
+zero_shot;0,7;8;As a specialist in rhinocytology, you need to review the automatic classification of cells. Please examine the table showing the type of cell, number of detected cells, reference range, and classification of their quantity.
+zero_shot;0,7;8;Go to the section where you can view the classified cell images and categorize them by confidence level (low, medium, high).
+zero_shot;0,7;8;"You have identified an incorrect classification in the table. Please mark the cell classification as ""Incorrect"" and provide a reason why the original classification was wrong."
+zero_shot;0,7;8;Try to reclassify a cell that was incorrectly identified by selecting a new class and providing an explanation for the correction.
+zero_shot;0,7;8;Review the classified cell images and verify that the system is correctly identifying and categorizing the cells according to their type and confidence level.
+zero_shot;0,7;9;As a specialist, you want to validate the classification of a cell. Please select a cell and indicate whether its classification is correct or incorrect.
+zero_shot;0,7;9;You have identified an incorrect classification. Please select a new class for the cell and provide a reason why the original classification was wrong.
+zero_shot;0,7;9;You want to review the test results. Please navigate to the dashboard and try to understand the overview of the test results.
+zero_shot;0,7;9;You want to verify the classification of a cell with low confidence. Please select the cell and try to understand why the system has low confidence in its classification.
+zero_shot;0,7;9;You have corrected a classification. Please try to understand how the system will use this correction to improve its classification model.
+zero_shot;0,6;3;Open the Rhino-Cyt web application and navigate to the main dashboard.
+zero_shot;0,6;3;View the classification of a cell image and determine if it is accurate.
+zero_shot;0,6;3;"Validate the classification of a cell image by marking it as ""Correct"" or ""Incorrect""."
+zero_shot;0,6;3;"Correct the classification of a cell image if it is marked as ""Incorrect"" and provide a reason for the correction."
+zero_shot;0,6;3;Review the test results table to understand the types of cells detected, their numbers, and the reference ranges.
+zero_shot;0,6;5;"You are reviewing a patient's nasal cytological preparation. You need to validate the classification of a cell as ""epithelial cell"". Please check the classification and decide if it is correct or incorrect."
+zero_shot;0,6;5;"You have identified a cell that was incorrectly classified as ""mucus-producing cell"". Please correct the classification and provide a reason why the original classification was wrong."
+zero_shot;0,6;5;"You want to verify the number of ""eosinophils"" detected in a patient's sample. Please check the test results table to confirm the number."
+zero_shot;0,6;5;You need to review the images of classified cells with low confidence. Please navigate to the classified cell images and verify that you can see the images with low confidence.
+zero_shot;0,6;5;"You have identified a cell that was correctly classified as ""red blood cell"". Please validate the classification and confirm that it is correct."
+zero_shot;0,6;7;As a rhinocytologist, I would like to review the classification of a cell, so I can validate and potentially correct it if necessary.
+zero_shot;0,6;7;I would like to see the reasons why the system originally classified a cell in a certain way, so I can understand its decision-making process.
+zero_shot;0,6;7;On the classified cells page, I would like to distinguish between correct and incorrect classifications, so I can focus my attention on the cells that need correction.
+zero_shot;0,6;7;I would like to be able to correct the classification of a cell by selecting a new class, so I can provide accurate information to the system.
+zero_shot;0,6;7;I would like to be able to provide reasons for correcting a cell classification, so the system can learn from my feedback and improve its accuracy.
+zero_shot;0,6;7;As a rhinocytologist, I would like to be able to access a table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity, so I can understand the overall results of the analysis.
+zero_shot;0,6;7;I would like to be able to visualize the classified cell images, categorized by confidence level (low, medium, high), so I can see the system's accuracy in different contexts.
+zero_shot;0,5;10;As a rhinocytologist, I want to review the classification of cells in a nasal cytological preparation, so I can validate the accuracy of the system's automatic classification.
+zero_shot;0,5;10;As a rhinocytologist, I want to correct the classification of a cell when the system's automatic classification is incorrect, so I can provide accurate information for future classifications.
+zero_shot;0,5;10;As a rhinocytologist, I want to understand the reasons behind the system's automatic classification, so I can provide accurate corrections and improve the model's accuracy.
+zero_shot;0,5;10;As a rhinocytologist, I want to see the classified cell images, so I can better understand the system's automatic classification and make more accurate corrections.
+zero_shot;0,5;10;As a rhinocytologist, I want to see the confidence level of the system's automatic classification, so I can make more informed decisions when correcting the classifications.
+zero_shot;0,5;2;As a rhinocytologist, I want to be able to validate the automatic classification of cells, so I can confirm that the system is accurate in its identification.
+zero_shot;0,5;2;As a rhinocytologist, I want to be able to correct the automatic classification of cells when it is incorrect, so I can provide accurate information for future analysis.
+zero_shot;0,5;2;As a rhinocytologist, I want to be able to view the classified cell images and their corresponding classifications, so I can understand the system's reasoning behind its identifications.
+zero_shot;0,5;2;As a rhinocytologist, I want to be able to see the confidence level of the system's classifications, so I can determine when to trust its identifications and when to correct them.
+zero_shot;0,5;2;As a rhinocytologist, I want to be able to provide reasons for correcting the system's classifications, so I can help improve the model's accuracy for future analyses.
+zero_shot;0,5;3;As a rhinocytologist, I would like to review the automatic classification of cells provided by the system to ensure accuracy.
+zero_shot;0,5;3;As a rhinocytologist, I would like to correct the classification of cells that were incorrectly identified by the system and provide reasons for the correction.
+zero_shot;0,5;3;As a rhinocytologist, I would like to view the classified images of cells, categorized by confidence level, to understand the system's performance.
+zero_shot;0,5;3;As a rhinocytologist, I would like to see the test results, including the type of cell, number of detected cells, reference range, and classification of their quantity, to evaluate the system's effectiveness.
+zero_shot;0,5;3;As a rhinocytologist, I would like to validate the explanations provided by the system for the classification of cells to ensure they are accurate and relevant.
+zero_shot;0,5;4;As a rhinocytologist, I want to review the classification of a cell image to ensure its accuracy, so I can correct any mistakes and provide feedback to improve the model.
+zero_shot;0,5;4;As a rhinocytologist, I want to view the classified cell images, categorized by confidence level, so I can assess the model's performance and identify areas for improvement.
+zero_shot;0,5;4;As a rhinocytologist, I want to validate the classification of a cell image, so I can confirm or correct the model's output and provide feedback to refine the model's accuracy.
+zero_shot;0,5;4;As a rhinocytologist, I want to correct the classification of a cell image, so I can provide accurate feedback to the model and improve its performance over time.
+zero_shot;0,5;5;As a rhinocytologist, I would like to review the classification of cells in a nasal cytological preparation and validate if it is correct or not.
+zero_shot;0,5;5;"As a rhinocytologist, I would like to mark a cell classification as ""Incorrect"" and provide a reason why the original classification was wrong."
+zero_shot;0,5;5;As a rhinocytologist, I would like to select a new class for a cell and understand how the system will reconfigure its model based on my correction.
+zero_shot;0,5;5;As a rhinocytologist, I would like to compare the classified cell images and their corresponding classifications to ensure that they are accurate and consistent.
+zero_shot;0,5;5;As a rhinocytologist, I would like to use the dashboard to navigate through the system and access the different features and functionalities.
+zero_shot;0,5;6;As a rhinocytologist, I would like to review the classifications of cells provided by the system and validate their correctness. Please show me how to do this.
+zero_shot;0,5;6;I would like to correct a classification that I believe is incorrect. Please guide me through the process of correcting a classification and providing a reason for the correction.
+zero_shot;0,5;6;"I would like to view the images of cells that have been classified as ""low confidence"". Please show me how to access these images."
+zero_shot;0,5;6;I would like to compare the classifications provided by the system with my own expertise. Please show me how to view the classified cell images and their corresponding classifications.
+zero_shot;0,5;6;"I would like to validate the correctness of a classification and mark it as ""Correct"" or ""Incorrect"". Please guide me through this process."
+zero_shot;0,5;9;"As a rhinocytologist, I would like to validate the classification of a cell image that the system has identified as a ""mast cell"" to ensure that the classification is correct."
+zero_shot;0,5;9;"As a rhinocytologist, I would like to view the images of cells that the system has classified as ""low confidence"" to verify the accuracy of the classification."
+zero_shot;0,5;9;"As a rhinocytologist, I would like to correct the classification of a cell image that the system has incorrectly identified as a ""lymphocyte"" when it is actually a ""metaplastic cell"" and provide a reason for the correction."
+zero_shot;0,4;2;"As a rhinocytologist, I want to validate the classification of a cell as ""ciliated cells"" to ensure the accuracy of the system's automatic classification."
+zero_shot;0,4;2;"As a rhinocytologist, I want to correct the classification of a cell as ""eosinophils"" to ""lymphocytes"" and provide a reason why the original classification was incorrect."
+zero_shot;0,4;2;As a rhinocytologist, I want to view the images of classified cells that were identified with low confidence to assess the system's accuracy.
+zero_shot;0,4;2;As a rhinocytologist, I want to review the table showing the type of cell, the number of detected cells, the reference range, and the classification of their quantity to understand the system's test results.
+zero_shot;0,4;3;As a rhinocytologist, you are reviewing the classification of cells in a nasal cytological preparation. You notice that a cell has been incorrectly classified. Please correct the classification by selecting a new class and providing a reason for the correction.
+zero_shot;0,4;3;"You are reviewing the classification of cells in a nasal cytological preparation. Please validate the classification of a cell by marking it as ""Correct"" or ""Incorrect"". If you mark it as ""Incorrect"", please provide a reason for the correction."
+zero_shot;0,4;3;You are reviewing the results of a nasal cytological preparation. Please examine the table showing the type of cell, the number of detected cells, the reference range, and the classification of their quantity. Can you identify any discrepancies or errors in the classification?
+zero_shot;0,4;4;As a rhinocytologist, you are reviewing the test results for a nasal cytological preparation. You need to verify the classification of a cell. What type of cell is the system identifying in the image?
+zero_shot;0,4;4;You are reviewing the classification of cells and found an error. How do you correct the classification of a cell that was incorrectly identified?
+zero_shot;0,4;4;You want to check the confidence level of the system's classification for a specific cell type. Where can you find this information?
+zero_shot;0,4;4;You are reviewing the test results and want to see the image of a cell that was classified as a specific type. How do you access the classified cell images?
+zero_shot;0,4;4;"You want to validate the classification of a cell. What options do you have to mark the classification as ""Correct"" or ""Incorrect""?"
+zero_shot;0,4;5;As a rhinocytologist, you need to review the classifications of cells provided by the system. Please validate the classifications of the cells shown in the table on the screen.
+zero_shot;0,4;5;"You have identified an error in the classification of a cell. Please correct the classification of the cell shown in the ""classified-cells-wrong.png"" screenshot."
+zero_shot;0,4;5;"You want to understand how the system's classification model works. Please review the explanations provided for the classifications of the cells shown in the ""classified-cells-correct.png"" screenshot."
+zero_shot;0,4;5;You need to assess the performance of the system's classification model. Please review the table on the screen showing the test results, including the type of cell, the number of detected cells, and the reference range.
+zero_shot;0,4;6;"As a rhinocytologist, you are presented with a classification of a cell as a ""mucus-producing cell"" with a confidence level of ""medium"". Review the classification and decide whether it is correct or incorrect."
+zero_shot;0,4;6;"You are shown a cell that has been classified as a ""lymphocyte"" with a confidence level of ""high"". However, you are not convinced by the classification. What would you do to correct the classification?"
+zero_shot;0,4;6;Review the table of test results and identify the type of cell that is present in the highest quantity. What do you think about the reference range provided for this cell type?
+zero_shot;0,4;6;"You are shown a cell that has been classified as a ""mast cell"" with a confidence level of ""low"". What would you do to correct the classification?"
+zero_shot;0,4;6;Review the classified cell images and identify the cell that has been classified with the lowest confidence level. What do you think about the classification of this cell?
+zero_shot;0,4;9;As a rhinocytologist, I want to validate the classification of cells in a test result, so I can correct any incorrect classifications.
+zero_shot;0,4;9;As a rhinocytologist, I want to view the classified images of cells, so I can assess the accuracy of the system's classifications.
+zero_shot;0,4;9;As a rhinocytologist, I want to correct a classification that I marked as incorrect, so I can provide feedback to the system and improve its accuracy.
+zero_shot;0,4;9;As a rhinocytologist, I want to understand the reference range for a specific type of cell, so I can compare the system's results with established norms.
+zero_shot;0,3;10;As a rhinocytologist, you are reviewing a patient's nasal cytological preparation. You need to validate the classification of cells in the system. How do you check if the system has correctly identified and classified the cells?
+zero_shot;0,3;10;You notice that the system has incorrectly classified some cells. How do you correct the classification and provide a reason for the correction?
+zero_shot;0,3;10;You want to review the images of the classified cells to see if the system's classification is accurate. How do you access the images of the classified cells?
+zero_shot;0,3;10;You need to verify the reference range for a specific type of cell. How do you find this information in the system?
+zero_shot;0,3;3;You are reviewing a patient's nasal cytological preparation. Please validate the classification of the cells shown in the image.
+zero_shot;0,3;3;You have identified an error in the classification of a cell. Please correct the classification and provide a reason for the correction.
+zero_shot;0,3;3;You want to verify the reference range for a specific type of cell. Please check the table showing the test results.
+zero_shot;0,3;3;You need to review the images of classified cells. Please browse through the categorized images by confidence level.
+zero_shot;0,3;3;"You have marked a classification as ""Incorrect"". Please provide a reason for the correction and select the correct classification."
+zero_shot;0,3;6;As a rhinocytologist, I want to review the classifications of cells in a test result to ensure their accuracy.
+zero_shot;0,3;6;"I want to be able to mark a classification as ""Incorrect"" and provide a reason for the error."
+zero_shot;0,3;6;I want to select a new class for a cell that was incorrectly classified and have the system learn from my correction.
+zero_shot;0,3;6;I want to view the classified cell images, categorized by confidence level, to understand the system's accuracy.
+zero_shot;0,3;6;I want to validate the system's explanation for a specific cell classification to ensure it is accurate and relevant.
+zero_shot;0,3;6;I want to correct the system's explanation for a specific cell classification and provide my own reasoning for the correct classification.
+zero_shot;0,3;6;I want to see the changes I made to the classifications and explanations in the test result after validating and correcting them.
+zero_shot;0,3;9;"As a rhinocytologist, I would like to validate the classification of a cell as ""epithelial cell"" and mark it as ""Incorrect"" if it is not."
+zero_shot;0,3;9;"As a rhinocytologist, I would like to correct the classification of a cell as ""bacteria"" and change it to ""red blood cell"" if I believe it is incorrect."
+zero_shot;0,3;9;As a rhinocytologist, I would like to view the images of all classified cells, including those with low, medium, and high confidence levels.
+zero_shot;0,3;9;As a rhinocytologist, I would like to review the test results table to ensure that it accurately reflects the classification of cells.
+zero_shot;0,3;9;"As a rhinocytologist, I would like to understand why a cell was classified as ""mast cell"" if I believe the classification is incorrect."
+zero_shot;0,2;10;"As a rhinocytologist, I would like to review the classification of a cell and mark it as ""Incorrect"" if it's not accurate."
+zero_shot;0,2;10;As a rhinocytologist, I would like to correct the classification of a cell by selecting a new class and providing reasons why the original classification was wrong.
+zero_shot;0,2;10;As a rhinocytologist, I would like to view the classified cell images, categorized by confidence level (low, medium, high), to understand the system's accuracy.
+zero_shot;0,2;10;As a rhinocytologist, I would like to see a table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity to understand the test results.
+zero_shot;0,2;10;As a rhinocytologist, I would like to understand why the system classified a cell in a particular way, so I can provide feedback to improve the model.
+zero_shot;0,2;5;As a rhinocytologist, I want to validate the classification of cells in the results table, so I can review and correct the automatic classifications if necessary.
+zero_shot;0,2;5;As a rhinocytologist, I want to view the images of classified cells, so I can assess the accuracy of the automatic classification.
+zero_shot;0,2;5;As a rhinocytologist, I want to correct the classification of a cell, so I can provide accurate information for the model to relearn and improve.
+zero_shot;0,2;5;As a rhinocytologist, I want to provide reasons for correcting a cell classification, so the model can learn from my feedback and improve its accuracy.
+zero_shot;0,2;6;As a rhinocytologist, I want to review the classification of a cell to ensure its accuracy, so I can validate or correct the classification if necessary.
+zero_shot;0,2;6;As a rhinocytologist, I want to view the classified images of cells, categorized by confidence level, so I can assess the system's accuracy.
+zero_shot;0,2;6;As a rhinocytologist, I want to correct a misclassified cell by selecting a new class and providing reasons for the correction, so I can improve the system's accuracy.
+zero_shot;0,2;6;As a rhinocytologist, I want to view the test results, including the type of cell, number of detected cells, reference range, and classification of their quantity, so I can understand the system's output.
+zero_shot;0,2;6;"As a rhinocytologist, I want to validate the system's classification of a cell by marking it as ""Correct"" or ""Incorrect"", so I can assess the system's accuracy."
+zero_shot;0,2;7;As a rhinocytologist, I want to validate the classification of cells in the table, so I can correct any errors and improve the system's accuracy.
+zero_shot;0,2;7;As a rhinocytologist, I want to view the images of classified cells, so I can verify the system's accuracy and understand the classification decisions.
+zero_shot;0,2;7;As a rhinocytologist, I want to correct the classification of cells that were incorrectly identified, so I can provide feedback to the system and improve its accuracy.
+zero_shot;0,2;7;As a rhinocytologist, I want to review the test results, so I can understand the system's performance and identify areas for improvement.
+zero_shot;0,2;7;As a rhinocytologist, I want to verify that the system is correctly identifying and classifying cells, so I can trust the results and make informed decisions.
+zero_shot;0,2;8;As a rhinocytologist, you need to review the classification of cells provided by the system. Please evaluate the accuracy of the classification for a sample of cells.
+zero_shot;0,2;8;You have identified a cell that was incorrectly classified by the system. Please correct the classification and provide a reason for the original classification error.
+zero_shot;0,2;8;You want to verify the reference range for a specific type of cell. Please locate and review the reference range for that cell type.
+zero_shot;0,2;8;You need to assess the confidence level of the system's classification for a particular cell. Please examine the confidence level assigned to that cell's classification.
+zero_shot;0,2;8;"You have found an error in the system's classification of a cell. Please mark the classification as ""Incorrect"" and provide a reason for the error."
+zero_shot;0,2;8;You want to review the classified images of cells, categorized by confidence level. Please navigate to the section displaying classified cell images.
+zero_shot;0,2;8;You need to validate the accuracy of the system's classification for a batch of cells. Please review the classification for each cell in the batch.
+zero_shot;0,2;9;"As a rhinocytologist, I would like to review the classification of a cell and mark it as ""Incorrect"" if it's wrong. Please do this for a cell in the current view."
+zero_shot;0,2;9;"I would like to correct the classification of a cell that was previously marked as ""Incorrect"". Please select a new class and provide a reason why the original classification was wrong."
+zero_shot;0,2;9;I would like to review the classified cell images, specifically those with a low confidence level. Please show me these images and their corresponding classifications.
+zero_shot;0,2;9;"As a rhinocytologist, I would like to validate the classification of a cell and mark it as ""Correct"" if it's accurate. Please do this for a cell in the current view."
+zero_shot;0,2;9;I would like to compare the reference range for a specific cell type with the number of detected cells in the current view. Please show me this information.
+zero_shot;0,2;9;I would like to review the classified cell images, specifically those with a high confidence level. Please show me these images and their corresponding classifications.
+zero_shot;0,1;1;As a rhinocytologist, I want to review the classification of a cell image to ensure it is accurate. Please validate the classification of a cell image and correct it if necessary.
+zero_shot;0,1;1;I need to understand why a cell was incorrectly classified. Please review the classification of a cell image and provide a reason for the incorrect classification.
+zero_shot;0,1;1;I want to verify the accuracy of the system's classification. Please validate the classification of multiple cell images and correct any incorrect classifications.
+zero_shot;0,1;1;As a rhinocytologist, I want to improve the system's accuracy. Please review the classification of a cell image and provide feedback on why the original classification was incorrect.
+zero_shot;0,1;1;I need to ensure the system is accurate for a specific type of cell. Please review the classification of multiple cell images of a specific type of cell and correct any incorrect classifications.
+zero_shot;0,1;10;"As a rhinocytologist, I would like to review the classification of a cell image and mark it as ""Incorrect"" if it is not accurate."
+zero_shot;0,1;10;As a rhinocytologist, I would like to select a new class for a cell image that was previously classified incorrectly and provide a reason for the correction.
+zero_shot;0,1;10;As a rhinocytologist, I would like to view the classified cell images categorized by confidence level to ensure the system is accurately identifying cells.
+zero_shot;0,1;10;As a rhinocytologist, I would like to validate the system's automatic classification of cells and correct any errors to improve the model's accuracy.
+zero_shot;0,1;10;As a rhinocytologist, I would like to see the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity to understand the system's output.
+zero_shot;0,1;2;"As a rhinocytologist, I would like to validate the classification of a cell as ""ciliated cell"" and mark it as ""Incorrect"" because it is actually a ""mast cell"". I want to correct the classification and provide a reason for the mistake."
+zero_shot;0,1;2;As a rhinocytologist, I would like to review the test results for a nasal cytological preparation and understand how the system classified the different types of cells.
+zero_shot;0,1;2;As a rhinocytologist, I would like to view the images of classified cells and understand how the system's confidence level affects the classification.
+zero_shot;0,1;2;"As a rhinocytologist, I would like to correct the classification of a cell as ""eosinophil"" and provide a reason for the mistake, so that the system can reconfigure its model."
+zero_shot;0,1;3;"As a rhinocytologist, I would like to validate the classification of a cell as ""epithelial cell"" in the table of test results. Please navigate to the test results and select a cell for validation."
+zero_shot;0,1;3;"I would like to review the images of cells classified as ""ciliated cells"" with low confidence. Please show me the images of these cells and allow me to select one for further review."
+zero_shot;0,1;3;"As a rhinocytologist, I would like to correct the classification of a cell as ""artifacts"" to ""red blood cells"" because the cell's morphology is more consistent with red blood cells. Please navigate to the validation page and select a cell for correction."
+zero_shot;0,1;3;I would like to understand how the system displays the reference range for each cell type. Please show me the dashboard view and highlight the section that displays this information.
+zero_shot;0,1;3;As a rhinocytologist, I would like to re-run the analysis for a specific nasal cytological preparation to see if the system's classification changes. Please navigate to the dashboard view and select the option to re-run the analysis.
+zero_shot;0,1;4;"As a rhinocytologist, I want to validate the classification of a cell as ""ciliated cell"" to ensure its accuracy."
+zero_shot;0,1;4;"As a rhinocytologist, I want to correct the classification of a cell as ""eosinophil"" to ""mast cell"" because the system incorrectly identified it."
+zero_shot;0,1;4;"As a rhinocytologist, I want to view the images of all cells classified as ""metaplastic cells"" to assess their quality."
+zero_shot;0,1;4;As a rhinocytologist, I want to review the table of test results to ensure that the system accurately detected and classified all cells.
+zero_shot;0,1;4;As a rhinocytologist, I want to access the images of cells classified with low confidence to re-evaluate their classification.
+zero_shot;0,1;4;"As a rhinocytologist, I want to mark a cell as ""Incorrect"" and provide a reason for the correction to improve the system's accuracy."
+zero_shot;0,1;5;"As a rhinocytologist, I would like to review the classification of a cell image and mark it as ""Incorrect"" if it is not accurate."
+zero_shot;0,1;5;As a rhinocytologist, I would like to select a new class for a cell image that was previously classified incorrectly and provide a reason for the correction.
+zero_shot;0,1;5;As a rhinocytologist, I would like to view the classified cell images categorized by confidence level to ensure the system is accurately identifying cells.
+zero_shot;0,1;5;As a rhinocytologist, I would like to validate the test results provided by the system, including the type of cell, number of detected cells, reference range, and classification of their quantity.
+zero_shot;0,1;5;As a rhinocytologist, I would like to compare the system's automatic classification with my own expertise and correct any errors or inaccuracies.
+zero_shot;0,1;6;As a rhinocytologist, I would like to review the classifications provided by the system for a nasal cytological preparation and identify any incorrect classifications.
+zero_shot;0,1;6;As a rhinocytologist, I would like to correct an incorrect classification by selecting a new class and providing reasons why the original classification was wrong.
+zero_shot;0,1;6;As a rhinocytologist, I would like to view the classified cell images for a nasal cytological preparation, categorized by confidence level.
+zero_shot;0,1;6;As a rhinocytologist, I would like to validate the correctness of the classifications provided by the system for a nasal cytological preparation.
+zero_shot;0,1;6;As a rhinocytologist, I would like to view the test results for a nasal cytological preparation, including the type of cell, the number of detected cells, the reference range, and a classification of their quantity.
+zero_shot;0,1;7;"As a rhinocytologist, I would like to validate the classification of a cell as ""mucus-producing cell"" and mark it as ""Incorrect"" because it is actually a ""ciliated cell"". I want to correct the classification and provide a reason for the mistake."
+zero_shot;0,1;7;As a rhinocytologist, I would like to review the table showing the type of cell, the number of detected cells, the reference range, and the classification of their quantity to ensure that the system is accurately identifying and classifying cells.
+zero_shot;0,1;7;As a rhinocytologist, I would like to view the classified cell images, categorized by confidence level (low, medium, high), to understand the system's accuracy in identifying and classifying cells.
+zero_shot;0,1;7;"As a rhinocytologist, I would like to correct the classification of a cell as ""mast cell"" and mark it as ""Correct"" because it is actually a ""lymphocyte"". I want to provide a reason for the correction."
+zero_shot;0,1;8;As a rhinocytologist, I want to review the classifications of cells in a nasal cytological preparation to ensure their accuracy.
+zero_shot;0,1;8;As a rhinocytologist, I want to correct the classification of a cell that was incorrectly identified by the system.
+zero_shot;0,1;8;As a rhinocytologist, I want to provide a reason for correcting the classification of a cell that was incorrectly identified by the system.
+zero_shot;0,1;8;As a rhinocytologist, I want to validate the classification of a cell that was correctly identified by the system.
+zero_shot;0,1;8;As a rhinocytologist, I want to view the classified images of cells in a nasal cytological preparation, categorized by confidence level.
+zero_shot;0,1;9;"As a rhinocytologist, I would like to review the classification of a cell image and mark it as ""Incorrect"" if it is not accurate."
+zero_shot;0,1;9;As a rhinocytologist, I would like to select a new class for a cell image that was previously classified incorrectly and provide a reason for the correction.
+zero_shot;0,1;9;As a rhinocytologist, I would like to view the classified cell images categorized by confidence level to ensure the system is accurately identifying cells.
+zero_shot;0,1;9;As a rhinocytologist, I would like to validate the system's automatic classification of cells and correct any errors to improve the model's accuracy.
+zero_shot;0,1;9;As a rhinocytologist, I would like to review the test results table to ensure it accurately reflects the cell types, numbers, and reference ranges.
+zero_shot;0;10;As a rhinocytologist, I want to review the classification of a cell image to ensure it is accurate, so I can validate or correct the classification if necessary.
+zero_shot;0;10;As a rhinocytologist, I want to view the reasons why a cell was incorrectly classified by the system, so I can understand the model's decision-making process and provide feedback.
+zero_shot;0;10;As a rhinocytologist, I want to select a new classification for a cell image that was incorrectly classified by the system, so I can correct the model's mistake and improve its accuracy.
+zero_shot;0;10;As a rhinocytologist, I want to view the classified cell images categorized by confidence level, so I can prioritize my review and correction efforts.
+zero_shot;0;10;As a rhinocytologist, I want to view the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity, so I can understand the system's output and make informed decisions.
+zero_shot;0;2;As a rhinocytologist, I want to review the classification of a cell image to ensure it is accurate, so I can validate or correct the classification if necessary.
+zero_shot;0;2;As a rhinocytologist, I want to view the reasons why a cell was incorrectly classified by the system, so I can understand the model's decision-making process and provide feedback.
+zero_shot;0;2;As a rhinocytologist, I want to select a new classification for a cell image that was incorrectly classified by the system, so I can correct the model's mistake and improve its accuracy.
+zero_shot;0;2;As a rhinocytologist, I want to view the classified cell images categorized by confidence level, so I can prioritize my review and correction efforts.
+zero_shot;0;2;As a rhinocytologist, I want to view the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity, so I can understand the system's output and make informed decisions.
+zero_shot;0;3;As a rhinocytologist, I want to review the classification of a cell image to ensure it is accurate, so I can validate or correct the classification if necessary.
+zero_shot;0;3;As a rhinocytologist, I want to view the reasons why a cell was incorrectly classified by the system, so I can understand the model's decision-making process and provide feedback.
+zero_shot;0;3;As a rhinocytologist, I want to select a new classification for a cell image that was incorrectly classified by the system, so I can correct the model's mistake and improve its accuracy.
+zero_shot;0;3;As a rhinocytologist, I want to view the classified cell images categorized by confidence level, so I can prioritize my review and correction efforts.
+zero_shot;0;3;As a rhinocytologist, I want to view the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity, so I can understand the system's output and make informed decisions.
+zero_shot;0;4;As a rhinocytologist, I want to review the classification of a cell image to ensure it is accurate, so I can validate or correct the classification if necessary.
+zero_shot;0;4;As a rhinocytologist, I want to view the reasons why a cell was incorrectly classified by the system, so I can understand the model's decision-making process and provide feedback.
+zero_shot;0;4;As a rhinocytologist, I want to select a new classification for a cell image that was incorrectly classified by the system, so I can correct the model's mistake and improve its accuracy.
+zero_shot;0;4;As a rhinocytologist, I want to view the classified cell images categorized by confidence level, so I can prioritize my review and correction efforts.
+zero_shot;0;4;As a rhinocytologist, I want to view the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity, so I can understand the system's output and make informed decisions.
+zero_shot;0;5;As a rhinocytologist, I want to review the classification of a cell image to ensure it is accurate, so I can validate or correct the classification if necessary.
+zero_shot;0;5;As a rhinocytologist, I want to view the reasons why a cell was incorrectly classified by the system, so I can understand the model's decision-making process and provide feedback.
+zero_shot;0;5;As a rhinocytologist, I want to select a new classification for a cell image that was incorrectly classified by the system, so I can correct the model's mistake and improve its accuracy.
+zero_shot;0;5;As a rhinocytologist, I want to view the classified cell images categorized by confidence level, so I can prioritize my review and correction efforts.
+zero_shot;0;5;As a rhinocytologist, I want to view the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity, so I can understand the system's output and make informed decisions.
+zero_shot;0;6;As a rhinocytologist, I want to review the classification of a cell image to ensure it is accurate, so I can validate or correct the classification if necessary.
+zero_shot;0;6;As a rhinocytologist, I want to view the reasons why a cell was incorrectly classified by the system, so I can understand the model's decision-making process and provide feedback.
+zero_shot;0;6;As a rhinocytologist, I want to select a new classification for a cell image that was incorrectly classified by the system, so I can correct the model's mistake and improve its accuracy.
+zero_shot;0;6;As a rhinocytologist, I want to view the classified cell images categorized by confidence level, so I can prioritize my review and correction efforts.
+zero_shot;0;6;As a rhinocytologist, I want to view the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity, so I can understand the system's output and make informed decisions.
+zero_shot;0;7;As a rhinocytologist, I want to review the classification of a cell image to ensure it is accurate, so I can validate or correct the classification if necessary.
+zero_shot;0;7;As a rhinocytologist, I want to view the reasons why a cell was incorrectly classified by the system, so I can understand the model's decision-making process and provide feedback.
+zero_shot;0;7;As a rhinocytologist, I want to select a new classification for a cell image that was incorrectly classified by the system, so I can correct the model's mistake and improve its accuracy.
+zero_shot;0;7;As a rhinocytologist, I want to view the classified cell images categorized by confidence level, so I can prioritize my review and correction efforts.
+zero_shot;0;7;As a rhinocytologist, I want to view the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity, so I can understand the system's output and make informed decisions.
+zero_shot;0;8;As a rhinocytologist, I want to review the classification of a cell image to ensure it is accurate, so I can validate or correct the classification if necessary.
+zero_shot;0;8;As a rhinocytologist, I want to view the reasons why a cell was incorrectly classified by the system, so I can understand the model's decision-making process and provide feedback.
+zero_shot;0;8;As a rhinocytologist, I want to select a new classification for a cell image that was incorrectly classified by the system, so I can correct the model's mistake and improve its accuracy.
+zero_shot;0;8;As a rhinocytologist, I want to view the classified cell images categorized by confidence level, so I can prioritize my review and correction efforts.
+zero_shot;0;8;As a rhinocytologist, I want to view the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity, so I can understand the system's output and make informed decisions.
+zero_shot;0;9;As a rhinocytologist, I want to review the classification of a cell image to ensure it is accurate, so I can validate or correct the classification if necessary.
+zero_shot;0;9;As a rhinocytologist, I want to view the reasons why a cell was incorrectly classified by the system, so I can understand the model's decision-making process and provide feedback.
+zero_shot;0;9;As a rhinocytologist, I want to select a new classification for a cell image that was incorrectly classified by the system, so I can correct the model's mistake and improve its accuracy.
+zero_shot;0;9;As a rhinocytologist, I want to view the classified cell images categorized by confidence level, so I can prioritize my review and correction efforts.
+zero_shot;0;9;As a rhinocytologist, I want to view the table showing the type of cell, the number of detected cells, the reference range, and a classification of their quantity, so I can understand the system's output and make informed decisions.
