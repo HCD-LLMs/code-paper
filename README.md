@@ -1,45 +1,103 @@
-# Prompt Engineering with Ollama + LangChain + MLflow
+# Can the Tasks of your Usability Test be Scripted by an LLM?  _A Case Study in the Medical Domain_  
 
-This guide explains how to configure a local environment to track experiments using **Ollama**, **LangChain**, and **MLflow**.  
-It also describes the folder structure and how to run the provided Python scripts.
+This repository contains all the material related to the paper **"Can the Tasks of your Usability Test be Scripted by an LLM? A Case Study in the Medical Domain"**.  
+It is organized to provide a clear navigation of prompts, prototypes, source code, and results.  
 
----
 
-## Table of Contents
 
-1. [Environment setup (venv)](#environment-setup-venv)  
-2. [Installing dependencies](#installing-dependencies)  
-3. [Starting the MLflow server](#starting-the-mlflow-server)  
-4. [Running Ollama (models)](#running-ollama-models)  
-5. [Folder structure](#folder-structure)  
-6. [Running experiments](#running-experiments)  
-7. [Notes](#notes)  
+## 📂 Repository Structure
+
+### Root files
+- **.gitignore** → Standard Git configuration for excluding temporary/local files.  
+- **HCD and LLMs [Anonymous Submission].pdf** → Anonymous submission of the paper.   
+- **README.md** → This file, describing the repository content.  
+- **requirements.txt** → Python dependencies required to run the source code.  
 
 ---
 
-## Environment setup (venv)
+### 📂 Prompt_iterations
+This folder contains the evolution of the prompts designed to generate tasks with LLMs.  
 
-### Windows
+- **Prompt_v1.txt – Prompt_v3.txt** → Early iterations of prompt design.  
+- **Prompt_v4/**  
+  - **Anonymous_prompt_v4/** → Prompts adapted for the _Anonymous_ prototype.  
+  - **BrainMed_prompt_v4/** → Prompts adapted for the _BrainMed_ prototype.  
+- **Prompt_v5/**  
+  - **Anonymous_prompt_v5/** → Refined prompts for the Anonymous prototype.  
+  - **BrainMed_prompt_v5/** → Refined prompts for the BrainMed prototype.  
 
+---
+
+### 📂 Prototypes
+Contains the **two medical prototypes** used as case studies in the experiments. Each prototype includes both HTML code and images.  
+
+- **anonymous/**  
+  - **html/** → HTML implementation of the Anonymous prototype pages.  
+  - **img/** → Images supporting the prototype (UI screenshots, visual assets).  
+
+- **brainmed/**  
+  - **html/** → HTML implementation of the BrainMed prototype pages.  
+  - **img/** → Images supporting the prototype.  
+
+---
+
+### 📂 Results
+Contains the results of the **user study** and the **LLM-based task generation analysis**.  
+
+- **User_study_results.xlsx** → Raw results from the questionnaire.  
+- **gemma/**
+    - `analysis_task.xlsx` → Analysis of results for the _Gemma_ model.  
+    - `final_task_generated_anonymous.xlsx` → Tasks generated for the Anonymous prototype using Gemma.  
+    - `final_task_generated_brainmed.xlsx` → Tasks generated for the BrainMed prototype using Gemma.
+- **llama/** 
+    - `analysis_task.xlsx` → Analysis of results for the _Llama_ model.  
+    - `final_tasks_anonymous.xlsx` → Tasks generated for the Anonymous prototype using Llama.  
+    - `final_tasks_brainmed.xlsx` → Tasks generated for the BrainMed prototype using Llama.
+- **qwen/** 
+    - `final_tasks_analysis_anonymous.xlsx` → Tasks generated and analysis for the Anonymous prototype using Qwen.  
+    - `final_tasks_analysis_brainmed.xlsx` → Tasks generated and analysis for the BrainMed prototype using Qwen.  
+
+---
+
+### 📂 Source Code
+Contains the Python code used to run the LLM experiments and manage prompts.  
+
+- **Source_code_Anonymous/**  
+  - `loop_temp_prompt.py` → Main script to run prompt iterations for the Anonymous prototype.  
+  - `prompt_few_shot.py` → Few-shot prompt template.
+  - `prompt_one_shot.py` → One-shot prompt template.  
+  - `prompt_zero_shot.py` → Zero-shot prompt template.
+
+- **Source_code_BrainMed/**  
+  - `loop_temp_prompt.py` → Main script to run prompt iterations for the BrainMed prototype.  
+  - `prompt_few_shot.py` → Few-shot prompt template
+  - `prompt_one_shot.py` → One-shot prompt template.  
+  - `prompt_zero_shot.py` → Zero-shot prompt template.  
+
+
+
+## ⚙️ How to Use
+
+### 1. Environment Setup (venv)
+
+#### Windows
 ```powershell
-cd C:\code-paper
 python -m venv .venv
 .venv\Scripts\activate
 ````
 
-### macOS / Linux
+#### macOS
 
 ```bash
-cd ~/code-paper
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
 ---
 
-## Installing dependencies
+### 2. Install Dependencies
 
-With the virtual environment active, install all required packages from `requirements.txt`:
+With the virtual environment activated, install all required packages from `requirements.txt`:
 
 ```bash
 python -m pip install --upgrade pip
@@ -48,11 +106,11 @@ pip install -r requirements.txt
 
 ---
 
-## Starting the MLflow server
+### 3. Start MLflow Server
 
-Open another terminal (outside the virtual environment) and start MLflow:
+Open another terminal (outside the virtual environment) and start the local MLflow server:
 
-### Windows
+#### Windows
 
 ```powershell
 mlflow server `
@@ -61,144 +119,40 @@ mlflow server `
   --host 127.0.0.1 --port 5000
 ```
 
-### macOS / Linux
-
-```bash
-mlflow server \
-  --backend-store-uri file:./mlruns \
-  --default-artifact-root file:./mlruns/artifacts \
-  --host 127.0.0.1 --port 5000
-```
-
-* **MLflow Dashboard**: open [http://127.0.0.1:5000](http://127.0.0.1:5000)
+* **Dashboard**: open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser to access MLflow UI.
 
 ---
 
-## Running Ollama (models)
+### 4. Start Ollama (Run Model)
 
-Make sure **Ollama** is installed and running:
+Make sure you have [Ollama](https://ollama.com) installed on your system.
+Run the desired model, for example:
 
-```powershell
-ollama run deepseek-r1:8b   # or another model (llama3, gemma3, qwen, etc.)
+```bash
+ollama run llama3.2-vision:11b # or "gemma3:12b",  qwen25vl:latest"
 ```
 
-* The Ollama API will be available at: `http://localhost:11434`
+* The model server will run at `http://localhost:11434`.
+
+Based on the model you choose, adjust in the script `loop_temp_prompt.py` the variable model_choice .
 
 ---
 
-## Folder structure
+### 5. Run Python Scripts
 
-The project is organized as follows:
-
-```
-CODE-PAPER/
-│
-├── data/                         # Input data for prompts
-│   ├── brainmed/
-│   │   ├── html/                 # HTML files for BrainMed prototype
-│   │   │   └── code_brainmed.html (example)
-│   │   └── img/                  # Images for BrainMed prototype
-│   │       └── ...
-│   │
-│   └── rhyno_cyt/
-│       ├── html/                 # HTML files for Rhyno-Cyt prototype
-│       │   └── code_rhyno.html
-│       └── img/                  # Images for Rhyno-Cyt prototype
-│           └── classified-cells-correct.png
-│           └── classified-cells-wrong.png
-│           └── dashboard.png
-│
-├── results/ # Experimental results and user assessments
-│ ├── gemma/
-│   ├── all_task_generated_brainmed.xlsx 
-│   ├── all_task_generated_rhyno.xlsx
-│   └── analysis_task.xlsx
-│ 
-│ ├── llama/
-│   ├── all_tasks_brainmed.xlsx
-│   ├── all_tasks_rhyno.csv
-│   └── analysis.xlsx
-│ 
-│ ├── qwen/
-│ |  ├── qwen_tasks_comparison_brainmed.xlsx
-│ |  └── qwen_tasks_comparison_rhyno.xlsx
-│ |  
-│ └── user_assessmnet/ # User study evaluation forms
-│     ├── Integrating LLMs in the Evaluation Phase of Human... (response from users)
-│     └── Questionnaire PDF.pdf (questions for users)
-│
-├── src/                          # Source code
-│   ├── step_1_html/
-│   │   └── loop_temp_prompt.py   # Runs HTML-based experiments
-│   ├── step_2_img/
-│   │   └── loop_temp_prompt.py   # Runs image-based experiments
-│   ├── step_1_prompt/            # Prompt templates for BrainMed & Rhyno-Cyt (HTML)
-│   │   ├── brainmed/
-│   │   │   ├── template.py
-│   │   │   ├── prompt_one_shot.py
-│   │   │   └── prompt_few_shot.py
-│   │   └── rhyno_cyt/
-│   │       └── ...
-│   ├── step_2_prompt/            # Prompt templates for BrainMed & Rhyno-Cyt (Images)
-│   │   ├── brainmed/
-│   │   └── rhyno_cyt/
-│   └── __init__.py
-|
-├── utils/                         # Utility functions
-│   └── get_run.ipynb              # notebook for retrieving runs from MLflow 
-│
-├── main.py                       # Unified entrypoint for all experiments
-├── requirements.txt              # Dependencies
-└── README.md                     # This guide
-```
-
----
-
-## Running experiments
-
-All experiments are launched via **main.py** with parameters:
+With both **MLflow** and **Ollama** running and the virtual environment activated, execute one of the experiment scripts. For example:
 
 ```bash
-python main.py --step <step> [--prototype <name>] [--mode <prompt_mode>] [--param key=value]
+python Source_Code/Source_code_BrainMed/loop_temp_prompt.py
 ```
 
-### 1. Run HTML experiments (step 1)
+or
 
 ```bash
-python main.py --step step_1_html --param prototype=brainmed
-python main.py --step step_1_html --param prototype=rhyno_cyt
+python Source_Code/Source_code_Anonymous/loop_temp_prompt.py
 ```
 
-* Loads HTML files from: `data/<prototype>/html/`
 
-### 2. Run Image experiments (step 2)
-
-```bash
-python main.py --step step_2_img --param prototype=brainmed
-python main.py --step step_2_img --param prototype=rhyno_cyt
-```
-
-* Loads image files from: `data/<prototype>/img/`
-
-### 3. Run Prompt-only experiments (text-based)
-
-```bash
-# Zero-shot, one-shot, few-shot for BrainMed
-python main.py --step step_1_prompt --prototype brainmed --mode zero-shot
-python main.py --step step_1_prompt --prototype brainmed --mode one-shot
-python main.py --step step_1_prompt --prototype brainmed --mode few-shot
-
-# Rhyno-Cyt (same for step_2_prompt)
-python main.py --step step_2_prompt --prototype rhyno_cyt --mode zero-shot
-```
-
-### 4. Extra parameters
-
-You can pass additional parameters with `--param key=value`, for example:
-
-```bash
-python main.py --step step_2_img --param prototype=brainmed --param num_generations=5 --param model_choice=0 --param temperature=0.3
-```
-
+* MLflow will automatically log runs, including **prompts, responses, parameters, and artifacts**.
 
 
