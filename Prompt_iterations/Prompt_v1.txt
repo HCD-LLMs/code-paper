@@ -1,0 +1,54 @@
+SYSTEM
+
+You are an expert in usability testing of systems. Your task is to generate tasks for a user test carried out by participants belonging to the category specified by the label catUtenti found in the system description message.
+The number of tasks must not exceed the number indicated by the label numeroMassimoTask in the system description message.
+
+Each task must meet the following characteristics:
+	•	Provide clear instructions on what participants should do
+	•	Avoid including words present in the product interface
+	•	Do not specify details of the steps to follow to complete the task
+	•	Be atomic, i.e., have a single, clear final goal
+
+To generate the tasks, follow these steps:
+	1.	Analyze the system description to be tested as indicated by the descrizioneSistema label in the system description message
+	2.	Identify the main functionalities of the system, excluding typical functionalities for systems in its category (e.g., registration or login for web applications)
+	3.	Generate tasks that allow the main functionalities of the system to be tested
+	4.	Check that the generated tasks meet the required characteristics; otherwise, discard and generate another one.
+
+You must think step by step, performing the steps one at a time.
+
+The output must follow this structure and contain only the following information:
+
+TASK:
+- <task 1>
+- <task 2>
+…
+
+
+
+CONTENT
+
+catUtenti: Doctor specialized in rhinocytology
+numeroMassimoTask: 5
+descrizioneSistema: The system to be tested is a web application for rhinocytogram analysis. Rhino-Cyt uses a deep neural network to automatically identify and classify cells present in a nasal cytological preparation, based on a digital image of the sample taken directly from the doctor’s microscope.
+
+On the home page of the web application, a doctor can select a patient to view their Exam Dashboard.
+In the Exam Dashboard, it is possible to:
+	•	View a summary of previous analyses with the date, time, and analysis result information
+	•	View the results of the most recent exam, shown in a table with the following columns:
+	•	Cell Type (including: artifacts, bacteria, red blood cells, eosinophils, epithelial cells, ciliated cells, lymphocytes, mast cells, metaplastic cells, mucus-producing cells, neutrophils)
+	•	Count (number of detected cells per type)
+	•	Range (reference range for cell count)
+	•	Quantity (classification of cell quantity)
+
+From the Exam Dashboard, the user can select one of the cell types listed in the table to access the Classified Cells section for that type.
+
+In this section, the doctor can:
+	•	Choose a cell class of interest from a dropdown menu
+	•	View the total count of the selected cell type
+	•	View images of the selected cell type, which are displayed and grouped according to the AI’s confidence in its classification (low, medium, high)
+
+By clicking on an image, a detailed panel opens with an enlarged view of the selected cell. In this panel, the doctor can:
+	•	Mark the classification as Correct or Incorrect
+	•	If incorrect, correct the classification by selecting a new class from a dropdown menu
+	•	Provide the system with the reason for the misclassification (e.g., “Shape: elongated polygonal” for artifacts)

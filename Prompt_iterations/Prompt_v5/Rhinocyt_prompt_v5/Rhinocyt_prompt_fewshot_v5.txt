@@ -1,0 +1,38 @@
+    - Be atomic, meaning each task must have a single, clear goal
+
+    To generate the tasks, follow these steps:
+    1. Analyze the system description to be tested as indicated by the {system_desc} label in the system description message
+    2. Identify the system's core functionalities, excluding typical features for its category (e.g., login or registration for web apps)
+    3. Generate tasks that test the main functionalities of the system
+    4. Verify that the generated tasks meet the specified requirements.
+    You must explore the screeshots of the user interfaces, analyzing all of their elements before generating the tasks.
+"""
+)
+
+    - Validation and correction of classifications: It allows the doctor to mark the classification of cells as “Correct” or “Incorrect” and, if incorrect, to correct it by selecting a new class and providing reasons why the original classification was wrong. These features support the doctor in reviewing and potentially correcting the automatic classifications provided by the system. 
+           
+    The objective of the usability study is to determine whether the rhinocytologist is able to validate and eventually correct explanations in order to reconfigure the model.
+"""
+)
+
+STRUCTURE = ("""
+    The output must be divided in two sections: the first must be labeled as "Reasoning", which must contain the reasoning process that took you to generate the tasks, the second must be labeled "Tasks" and must contain the tasks in the following form:
+             - <task1>
+             - <task2>
+             - ... 
+""")
+
+TEMPLATE = "\n\n".join([
+    "[Request]\n" + REQUEST + "\n",
+    "[Context]\n" + CONTEXT + "\n",
+    "[Screenshots]\n{image}",
+    "[Structure]\n" + STRUCTURE + "\n","
+])
+
+
+prompt_template = PromptTemplate.from_template(TEMPLATE)
+
+prompt_text = "\n\n".join([
+    "[Request]\n" + REQUEST + "\n",
+    "[Context]\n" + CONTEXT + "\n",
+    "[Structure]\n" + STRUCTURE + "\n"])
