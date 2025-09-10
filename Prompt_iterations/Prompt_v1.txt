@@ -30,7 +30,7 @@ CONTENT
 
 catUtenti: Doctor specialized in rhinocytology
 numeroMassimoTask: 5
-descrizioneSistema: The system to be tested is a web application for rhinocytogram analysis. Rhino-Cyt uses a deep neural network to automatically identify and classify cells present in a nasal cytological preparation, based on a digital image of the sample taken directly from the doctor’s microscope.
+descrizioneSistema: The system to be tested is a web application for rhinocytogram analysis. Anonymous uses a deep neural network to automatically identify and classify cells present in a nasal cytological preparation, based on a digital image of the sample taken directly from the doctor’s microscope.
 
 On the home page of the web application, a doctor can select a patient to view their Exam Dashboard.
 In the Exam Dashboard, it is possible to:

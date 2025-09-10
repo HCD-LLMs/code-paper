@@ -1,6 +1,6 @@
 expertise = "usability testing"
 cat_users = "Doctor specialized in rhinocytology"
-system_name = "Rhino-Cyt"
+system_name = "Anonymous"
 system_desc = "It is a web application for rhinocytogram analysis that uses a deep neural network to automatically identify and classify cells from a nasal cytological preparation, based on a digital image taken directly from a microscope."
 
 REQUEST = (

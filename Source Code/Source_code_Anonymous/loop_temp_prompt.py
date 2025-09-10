@@ -12,7 +12,7 @@ import prompt_few_shot as few_shot
 
 # MLflow setup
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
-mlflow.set_experiment("Prompt_Comparison-rhyno-cyt-img")
+mlflow.set_experiment("Prompt_Comparison-anonymous-img")
 mlflow.openai.autolog()
 
 # (Opzionale) Raw client per embedding o moderazione

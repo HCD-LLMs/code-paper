@@ -1,7 +1,7 @@
 expertise = "usability testing"
 cat_users = "Doctor specialized in rhinocytology"
 num_tasks = 5
-system_name = "Rhino-Cyt"
+system_name = "Anonymous"
 system_desc = "It is a web application for rhinocytogram analysis that uses a deep neural network to automatically identify and classify cells from a nasal cytological preparation, based on a digital image taken directly from a microscope."
 
 REQUEST = (
@@ -40,7 +40,7 @@ STRUCTURE = ("""
 """)
 
 FOCUS = """
-The objective of this usability test is to assess to which extent the Rhinocyt's interaction paradigm improve human understanding and control. Specifically, the interaction paradigm involves:
+The objective of this usability test is to assess to which extent the Anonymous's interaction paradigm improve human understanding and control. Specifically, the interaction paradigm involves:
 1. Clarification: providing understandable explanations about the inner workings of the AI system, enhancing user comprehension of its behavior and decisions. It aims to propose explanations thyat consider the application domain along with users’ needs and characteristics.
 2. Reconfiguration: refers to enabling non-technical users to easily intervene on the retraining of the AI model. This becomes relevant when users identify incorrect predictions or when there is a need to integrate new data into the model improving its performance. 
 3. Iterative Exploration: relates to reaching the system outcome through a sequence of iterative steps driven by the interaction between the user and the AI system. It involves to break down the decision-making process into progressive steps to recalibrate the user's request to the system.

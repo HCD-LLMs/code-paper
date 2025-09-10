@@ -2,8 +2,7 @@ from langchain_core.prompts import PromptTemplate
 
 expertise = "usability testing"
 cat_users = "Doctor specialized in rhinocytology"
-num_tasks = 5
-system_name = "Rhino-Cyt"
+system_name = "anonymous"
 system_desc = "It is a web application for rhinocytogram analysis that uses a deep neural network to automatically identify and classify cells from a nasal cytological preparation, based on a digital image taken directly from a microscope."
 
 REQUEST = (
@@ -19,7 +18,9 @@ REQUEST = (
     3. Generate tasks that test the main functionalities of the system
     4. Verify that the generated tasks meet the specified requirements.
     
-    You must explore the screeshots of the user interfaces, analyzing all of their elements before generating the tasks.
+    You must explore the screeshots of the user interfaces, analyzing all of their elements before generating the tasks. 
+
+    An example of task that can be employed in this usability study is: Identify cells misclassified in class ‘‘ciliated’’ and correct misclassifications and explanations, if any.
 """
 )
 
@@ -42,34 +43,18 @@ STRUCTURE = ("""
              - ... 
 """)
 
-#FOCUS = """
-#The objective of this usability test is to assess to which extent the Rhinocyt's interaction paradigm improve human understanding and control. Specifically, the interaction paradigm involves:
-#1. Clarification: providing understandable explanations about the inner workings of the AI system, enhancing user comprehension of its behavior and decisions. It aims to propose explanations thyat consider the application domain along with users’ needs and characteristics.
-#2. Reconfiguration: refers to enabling non-technical users to easily intervene on the retraining of the AI model. This becomes relevant when users identify incorrect predictions or when there is a need to integrate new data into the model improving its performance. 
-#3. Iterative Exploration: relates to reaching the system outcome through a sequence of iterative steps driven by the interaction between the user and the AI system. It involves to break down the decision-making process into progressive steps to recalibrate the user's request to the system.
-#"""
-
 
 TEMPLATE = "\n\n".join([
     "[Request]\n" + REQUEST + "\n",
     "[Context]\n" + CONTEXT + "\n",
     "[Screenshots]\n{image}",
-    #"[Focus of the Study]" + FOCUS + "\n",
-    "[Structure]\n" + STRUCTURE + "\n",
-    #"ESEMPIO:\n```json\n"
-    #"{{\n"
-    #'  "elements": [...],\n'
-    #'  "summary": "..." ,\n'
-    #'  "count": 2\n'
-    #"}}\n```"
+    "[Structure]\n" + STRUCTURE + "\n"
 ])
 
-#print(TEMPLATE)
 
 prompt_template = PromptTemplate.from_template(TEMPLATE)
 
 prompt_text = "\n\n".join([
     "[Request]\n" + REQUEST + "\n",
     "[Context]\n" + CONTEXT + "\n",
-    #"[Focus of the Study]" + FOCUS + "\n",
     "[Structure]\n" + STRUCTURE + "\n"])
