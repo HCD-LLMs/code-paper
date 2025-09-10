@@ -13,7 +13,7 @@ It is organized to provide a clear navigation of prompts, prototypes, source cod
 - **README.md** → This file, describing the repository content.  
 - **requirements.txt** → Python dependencies required to run the source code.  
 
----
+
 
 ### 📂 Prompt_iterations
 This folder contains the evolution of the prompts designed to generate tasks with LLMs.  
@@ -26,7 +26,7 @@ This folder contains the evolution of the prompts designed to generate tasks wit
   - **Anonymous_prompt_v5/** → Refined prompts for the Anonymous prototype.  
   - **BrainMed_prompt_v5/** → Refined prompts for the BrainMed prototype.  
 
----
+
 
 ### 📂 Prototypes
 Contains the **two medical prototypes** used as case studies in the experiments. Each prototype includes both HTML code and images.  
@@ -39,7 +39,6 @@ Contains the **two medical prototypes** used as case studies in the experiments.
   - **html/** → HTML implementation of the BrainMed prototype pages.  
   - **img/** → Images supporting the prototype.  
 
----
 
 ### 📂 Results
 Contains the results of the **user study** and the **LLM-based task generation analysis**.  
@@ -57,7 +56,6 @@ Contains the results of the **user study** and the **LLM-based task generation a
     - `final_tasks_analysis_anonymous.xlsx` → Tasks generated and analysis for the Anonymous prototype using Qwen.  
     - `final_tasks_analysis_brainmed.xlsx` → Tasks generated and analysis for the BrainMed prototype using Qwen.  
 
----
 
 ### 📂 Source Code
 Contains the Python code used to run the LLM experiments and manage prompts.  
