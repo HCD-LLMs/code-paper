@@ -1,0 +1,20 @@
+# Pin di NumPy compatibile con tutti i binding C‑API
+numpy<2.0
+
+# MLflow per il tracking
+mlflow==2.21.3
+
+# SDK OpenAI
+openai==1.75.0
+
+# Core LangChain abstractions (contiene RunnableSequence, PromptTemplate, ecc.)
+langchain-core==0.3.52
+
+# Wrapper ChatOpenAI legacy (ChatPromptTemplate, ecc.)
+langchain-openai==0.3.13
+
+# Integrazioni community (modelli esterni, inclusa classe OpenAI)
+langchain-community==0.3.21
+
+# LangChain “metapacchetto” (solo utilities di alto livello)
+langchain==0.3.23
