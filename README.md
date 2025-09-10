@@ -9,7 +9,7 @@ It is organized to provide a clear navigation of prompts, prototypes, source cod
 
 ### Root files
 - **.gitignore** → Standard Git configuration for excluding temporary/local files.  
-- **HCD and LLMs [Anonymous Submission].pdf** → Anonymous submission of the paper.   
+- **HCD and LLMs [Anonymous Submission].pdf** → Anonymous submission of the User Task Evaluation .   
 - **README.md** → This file, describing the repository content.  
 - **requirements.txt** → Python dependencies required to run the source code.  
 
