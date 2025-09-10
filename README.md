@@ -9,7 +9,7 @@ It is organized to provide a clear navigation of prompts, prototypes, source cod
 
 ### Root files
 - **.gitignore** → Standard Git configuration for excluding temporary/local files.  
-- **HCD and LLMs [Anonymous Submission].pdf** → Anonymous submission of the User Task Evaluation .   
+- **HCD and LLMs [Anonymous Submission].pdf** → Anonymous submission of the questionnaire for User Task Evaluation .   
 - **README.md** → This file, describing the repository content.  
 - **requirements.txt** → Python dependencies required to run the source code.  
 
@@ -33,7 +33,7 @@ Contains the **two medical prototypes** used as case studies in the experiments.
 
 - **anonymous/**  
   - **html/** → HTML implementation of the Anonymous prototype pages.  
-  - **img/** → Images supporting the prototype (UI screenshots, visual assets).  
+  - **img/** → Images supporting the prototype (UI screenshots).  
 
 - **brainmed/**  
   - **html/** → HTML implementation of the BrainMed prototype pages.  
@@ -43,13 +43,13 @@ Contains the **two medical prototypes** used as case studies in the experiments.
 ### 📂 Results
 Contains the results of the **user study** and the **LLM-based task generation analysis**.  
 
-- **User_study_results.xlsx** → Raw results from the questionnaire.  
+- **User_study_results.xlsx** → Raw results from the questionnaire (HCD and LLMs [Anonymous Submission].pdf).  
 - **gemma/**
-    - `analysis_task.xlsx` → Analysis of results for the _Gemma_ model.  
-    - `final_task_generated_anonymous.xlsx` → Tasks generated for the Anonymous prototype using Gemma.  
-    - `final_task_generated_brainmed.xlsx` → Tasks generated for the BrainMed prototype using Gemma.
+    - `analysis_tasks.xlsx` → Analysis of results for the _Gemma_ model.  
+    - `final_tasks_generated_anonymous.xlsx` → Tasks generated for the Anonymous prototype using Gemma.  
+    - `final_tasks_generated_brainmed.xlsx` → Tasks generated for the BrainMed prototype using Gemma.
 - **llama/** 
-    - `analysis_task.xlsx` → Analysis of results for the _Llama_ model.  
+    - `analysis_tasks.xlsx` → Analysis of results for the _Llama_ model.  
     - `final_tasks_anonymous.xlsx` → Tasks generated for the Anonymous prototype using Llama.  
     - `final_tasks_brainmed.xlsx` → Tasks generated for the BrainMed prototype using Llama.
 - **qwen/** 
@@ -132,7 +132,7 @@ ollama run llama3.2-vision:11b # or "gemma3:12b",  qwen25vl:latest"
 
 * The model server will run at `http://localhost:11434`.
 
-Based on the model you choose, adjust in the script `loop_temp_prompt.py` the variable model_choice .
+** Based on the model you choose, adjust in the script `loop_temp_prompt.py` the variable model_choice .
 
 ---
 
