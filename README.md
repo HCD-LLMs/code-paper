@@ -45,16 +45,16 @@ Contains the results of the **user study** and the **LLM-based task generation a
 
 - **User_study_results.xlsx** → Raw results from the questionnaire (HCD and LLMs [Anonymous Submission].pdf).  
 - **gemma/**
-    - `analysis_tasks.xlsx` → Analysis of results for the _Gemma_ model.  
-    - `final_tasks_generated_anonymous.xlsx` → Tasks generated for the Anonymous prototype using Gemma.  
-    - `final_tasks_generated_brainmed.xlsx` → Tasks generated for the BrainMed prototype using Gemma.
+    - `analysis_tasks_gemma.xlsx` → Analysis of results for the _Gemma_ model.  
+    - `final_tasks_generated_anonymous_gemma.xlsx` → Tasks generated for the Anonymous prototype using Gemma.  
+    - `final_tasks_generated_brainmed_gemma.xlsx` → Tasks generated for the BrainMed prototype using Gemma.
 - **llama/** 
-    - `analysis_tasks.xlsx` → Analysis of results for the _Llama_ model.  
-    - `final_tasks_anonymous.xlsx` → Tasks generated for the Anonymous prototype using Llama.  
-    - `final_tasks_brainmed.xlsx` → Tasks generated for the BrainMed prototype using Llama.
+    - `analysis_tasks_llama.xlsx` → Analysis of results for the _Llama_ model.  
+    - `final_tasks_anonymous_llama.xlsx` → Tasks generated for the Anonymous prototype using Llama.  
+    - `final_tasks_brainmed_llama.xlsx` → Tasks generated for the BrainMed prototype using Llama.
 - **qwen/** 
-    - `final_tasks_analysis_anonymous.xlsx` → Tasks generated and analysis for the Anonymous prototype using Qwen.  
-    - `final_tasks_analysis_brainmed.xlsx` → Tasks generated and analysis for the BrainMed prototype using Qwen.  
+    - `final_tasks_analysis_anonymous_qwen.xlsx` → Tasks generated and analysis for the Anonymous prototype using Qwen.  
+    - `final_tasks_analysis_brainmed_qwen.xlsx` → Tasks generated and analysis for the BrainMed prototype using Qwen.  
 
 
 ### 📂 Source Code
