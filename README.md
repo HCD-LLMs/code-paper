@@ -132,7 +132,7 @@ ollama run llama3.2-vision:11b # or "gemma3:12b",  qwen25vl:latest"
 
 * The model server will run at `http://localhost:11434`.
 
-** Based on the model you choose, adjust in the script `loop_temp_prompt.py` the variable model_choice .
+**Based on the model you choose, adjust in the script `loop_temp_prompt.py` the variable model_choice.**
 
 ---
 
